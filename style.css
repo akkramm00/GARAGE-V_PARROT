@@ -103,3 +103,73 @@ header .navbar a:hover{
 }
 
 /*  Header/Navbar End  */
+
+/* Login form Container */
+.loginFormContainer{
+    position: fixed;
+    top: -105%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(255, 255, 255 ,0.9);
+    z-index: 1000;
+}
+.loginFormContainer.active {
+    top: 0;
+}
+.loginFormContainer form{
+    margin: 2rem;
+    border: var(--border);
+    box-shadow: var(--box_shadow);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    width: 40rem;
+}
+.loginFormContainer form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+.loginFormContainer form .box{
+    font-size: 1.6rem;
+    width: 100%;
+    margin: 0.7rem 0;
+    border: var(--border);
+    border-radius: 0.5rem;
+    text-transform: none;
+    padding: 1rem 1.2rem;
+}
+.loginFormContainer form p{
+    font-size: 1.5rem;
+    color: var(--main);
+    padding: 1rem 0;
+}
+.loginFormContainer form p a{
+    color: var(--main);
+    text-decoration:underline ;
+}
+
+#CloseLoginForm{
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 5rem;
+    cursor: pointer;
+}
+.loginFormContainer form .buttons{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    transition: 0.8s;
+
+}
+.loginFormContainer form .btn{
+    width: 100%;
+    display: block;
+    margin: 0.5rem 0;
+}
+/* Login form Container */
