@@ -194,6 +194,190 @@
     </section>
     <!-- Vehicules Section end -->
 
+    <!-- Featured Section Start-->
+    <section id="featured" class="feature">
+        <h1 class="heading">Feature Cars</h1>
+        <div class="swiper featureslider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="PORCHE 3.webp" alt="">
+                    <div class="content">
+                        <h3>New Model</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price">$85.000/-</div>
+                        <a href="#" class="btn">Commader</a>
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="PORCHE 2.webp" alt="">
+                    <div class="content">
+                        <h3>New Model</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price">$85.000/-</div>
+                        <a href="#" class="btn">Commader</a>
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="PORCHE 1.webp" alt="">
+                    <div class="content">
+                        <h3>New Model</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price">$85.000/-</div>
+                        <a href="#" class="btn">Commader</a>
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="ASTON 1.webp" alt="">
+                    <div class="content">
+                        <h3>New Model</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price">$85.000/-</div>
+                        <a href="#" class="btn">Commader</a>
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="BMW 1.webp" alt="">
+                    <div class="content">
+                        <h3>New Model</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price">$85.000/-</div>
+                        <a href="#" class="btn">Commader</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- For second section -->
+        <div class="swiper featureslider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="mercedes 1.webp" alt="">
+                    <div class="content">
+                        <h3>New Model</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price">$85.000/-</div>
+                        <a href="#" class="btn">Commader</a>
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="Bugatti 1.webp" alt="">
+                    <div class="content">
+                        <h3>New Model</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price">$85.000/-</div>
+                        <a href="#" class="btn">Commader</a>
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="LOMBO 1.webp" alt="">
+                    <div class="content">
+                        <h3>New Model</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price">$85.000/-</div>
+                        <a href="#" class="btn">Commader</a>
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="LOMBO 2.webp" alt="">
+                    <div class="content">
+                        <h3>New Model</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price">$85.000/-</div>
+                        <a href="#" class="btn">Commader</a>
+
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="BUGATTI_Mansory_Chiron_2019_Centuria_Front_White_561742_1280x720.jpg" alt="">
+                    <div class="content">
+                        <h3>New Model</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price">$85.000/-</div>
+                        <a href="#" class="btn">Commader</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Section End-->
+
 
     <!-- link JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>

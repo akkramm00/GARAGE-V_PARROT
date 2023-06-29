@@ -257,7 +257,7 @@ header .navbar a:hover{
     text-align:center;
 }
 .vehicule img{
-    width: 100%;
+    width: 70%;
     opacity:0.5;
     transform:scale(0.5);
 }
@@ -302,3 +302,39 @@ font-size:2.2rem;
     background:var(--main);
 }
 /* Vehicules Section End*/
+
+/* Featured Section Start */
+.feature{
+    margin-bottom:200px;
+}
+.featureslider {
+    padding: 1rem;
+    padding-bottom: 4rem;
+}
+.featureslider .box {
+    padding: 2rem;
+    text-align:center;
+    border: var(--border);
+    border-radius: 0.5rem;
+    box-shadow:var(--box_shadow);
+}
+.feature img {
+    height: 15rem;
+}
+.feature .box:hover img{
+    transform: scale(1.08);
+}
+.feature .box .content h3{
+    font-size: 2.2rem;
+}
+.feature .box .content .stars{
+    padding: 1rem 0;
+}
+.feature .box .content .stars i{
+    color: var(--main);
+    font-size: 1.7rem;
+}
+.feature .price{
+    font-size: 2.5rem;
+} 
+/* Featured Section End */
