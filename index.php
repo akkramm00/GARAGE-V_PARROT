@@ -20,6 +20,41 @@
 </head>
 
 <body>
+    <!-- header/Navbar start-->
+    <header>
+        <div id="MenuBtn" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>G</span>.ParroT</a>
+
+        <nav class="navbar">
+            <a href="#Home">Home</a>
+            <a href="#Vehicule">Vehicule</a>
+            <a href="#featured">Featured</a>
+            <a href="#Service">Services</a>
+            <a href="#Review">Review</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+
+        <div id="LoginBtn">
+            <button class="btn">SignUp</button>
+            <i class="fas fa-user"></i>
+        </div>
+    </header>
+    <!-- header/Navbar end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- link JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
