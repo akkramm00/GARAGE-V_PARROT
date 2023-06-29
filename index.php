@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.css" />
 
     <!-- link Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
     <!-- link CSS -->
     <link rel="stylesheet" href="style.css">
     <title>Garage parrot</title>
@@ -102,7 +102,97 @@
     </section>
     <!-- Icons Container End-->
 
+    <!-- Vehicules Section Start -->
+    <section id="Vehicule" class="vehicule">
+        <h1 class="heading">Voitures a Vendre</h1>
+        <div class="swiper VehiculesSlider">
+            <div class="swiper-wrapper">
 
+                <div class="swiper-slide box">
+                    <img src="MAZDA 1.webp" alt="">
+                    <div class="content">
+                        <h3>New Model</h3>
+                        <div class="price"><span>Price</span>$102.000</div>
+                        <p>
+                            <span class="fas fa-circle"></span>2022
+                            <span class="fas fa-circle"></span>Automatic
+                            <span class="fas fa-circle"></span>Electric
+                            <span class="fas fa-circle"></span>200mph
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="MAZDA 2.webp" alt="">
+                    <div class="content">
+                        <h3>New Model</h3>
+                        <div class="price"><span>Price</span>$102.000</div>
+                        <p>
+                            <span class="fas fa-circle"></span>2022
+                            <span class="fas fa-circle"></span>Automatic
+                            <span class="fas fa-circle"></span>Electric
+                            <span class="fas fa-circle"></span>200mph
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="MAZDA 3.webp" alt="">
+                    <div class="content">
+                        <h3>New Model</h3>
+                        <div class="price"><span>Price</span>$102.000</div>
+                        <p>
+                            <span class="fas fa-circle"></span>2022
+                            <span class="fas fa-circle"></span>Automatic
+                            <span class="fas fa-circle"></span>Electric
+                            <span class="fas fa-circle"></span>200mph
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="MAZDA 4.webp" alt="">
+                    <div class="content">
+                        <h3>New Model</h3>
+                        <div class="price"><span>Price</span>$102.000</div>
+                        <p>
+                            <span class="fas fa-circle"></span>2022
+                            <span class="fas fa-circle"></span>Automatic
+                            <span class="fas fa-circle"></span>Electric
+                            <span class="fas fa-circle"></span>200mph
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="MAZDA 5.webp" alt="">
+                    <div class="content">
+                        <h3>New Model</h3>
+                        <div class="price"><span>Price</span>$102.000</div>
+                        <p>
+                            <span class="fas fa-circle"></span>2022
+                            <span class="fas fa-circle"></span>Automatic
+                            <span class="fas fa-circle"></span>Electric
+                            <span class="fas fa-circle"></span>200mph
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="MAZDA 3.webp" alt="">
+                    <div class="content">
+                        <h3>New Model</h3>
+                        <div class="price"><span>Price</span>$102.000</div>
+                        <p>
+                            <span class="fas fa-circle"></span>2022
+                            <span class="fas fa-circle"></span>Automatic
+                            <span class="fas fa-circle"></span>Electric
+                            <span class="fas fa-circle"></span>200mph
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+    </section>
+    <!-- Vehicules Section end -->
 
 
     <!-- link JavaScript -->

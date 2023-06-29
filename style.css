@@ -80,7 +80,8 @@ header .logo span{
 header .navbar a{
     font-size: 1.7rem;
     color: #000;
-    margin: 0 1rem;text-decoration: none;
+    margin: 0 1rem;
+    text-decoration: none;
 }
 
 header .navbar a:hover{
@@ -198,6 +199,9 @@ header .navbar a:hover{
     width: 100%;
     height: 70%;
     background-color: transparent;
+    
+   
+
 }
 /* home Section End */
 
@@ -241,3 +245,60 @@ header .navbar a:hover{
     background:#000;
 }
 /* iconsContainer Section End*/
+
+/* Vehicules Section Start */
+.vehicule{
+    margin-bottom:250px;
+}
+.VehiculesSlider{
+    padding-bottom: 5rem;
+}
+.VehiculesSlider .box{
+    text-align:center;
+}
+.vehicule img{
+    width: 100%;
+    opacity:0.5;
+    transform:scale(0.5);
+}
+.VehiculesSlider .swiper-slide-active
+ img {
+    opacity: 1;
+    transform: scale(1.5);
+}
+.VehiculesSlider .box .content{
+    padding-top:1rem;
+    transform: scale(0);
+}
+.VehiculesSlider .swiper-slide-active .content{
+    transform: scale(1);
+}
+.VehiculesSlider .box .content  h3 {
+    font-size: 2.5rem;
+}
+.VehiculesSlider .box .content .price {
+color: var(--main);
+font-weight:600;
+padding: 1rem 0;
+font-size:2.2rem;
+}
+.VehiculesSlider .box .content .price span {
+    color: var(--main);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.VehiculesSlider .box .content p{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    padding-top: 1.5rem;
+    border-top:var(--border);
+    color: var(--main);
+}
+.VehiculesSlider .box .content span{
+    color: var(--main);
+    font-size: 1rem;
+    padding:0 0.5rem;
+}.swiper-pagination-bullet-active{
+    background:var(--main);
+}
+/* Vehicules Section End*/
