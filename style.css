@@ -467,3 +467,28 @@ font-size:2.2rem;
     height: 12rem;
 }
 /* Contact form End*/
+
+/* Section Footer Start */
+footer{
+    display: flex;
+    justify-content: space-around;
+    background: var(--main);
+    padding: 2rem;
+    text-align: center;
+}
+footer a {
+    color: #fff;
+    font-size: 2.1rem;
+
+}
+footer a i{
+    padding: 1rem;
+    font-size: 2rem;
+}
+footer a:hover{
+    color: yellow;
+}
+/* Section Footer End */
+
+
+
