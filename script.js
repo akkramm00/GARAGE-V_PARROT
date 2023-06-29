@@ -87,3 +87,32 @@ var swiper= new Swiper(".featureslider", {
     },
 });
 
+// Swiper JS FOR featured Slider
+var swiper= new Swiper(".featureslider", {
+    grabCursor: true,
+    spaceBetween: 20,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    // This is For Responsive
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3
+        },
+    },
+});
+
+// Swiper JS for Review Slider

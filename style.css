@@ -338,3 +338,49 @@ font-size:2.2rem;
     font-size: 2.5rem;
 } 
 /* Featured Section End */
+
+/* Service Section Start */
+.services{
+    margin-bottom: 200px;
+}
+.services .boxContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+.services .boxContainer .box {
+    box-shadow: var(--box_shadow);
+    border: var(--border);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+.services .boxContainer .box:hover{
+    background: #000;
+    color: #fff;
+}
+.services .boxContainer .box i {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    line-height: 6rem ;
+    background: var(--main);
+    color: #000 ;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.services .boxContainer .box h3{
+    font-size: 2.2rem;
+}
+.services .boxContainer .box .btn:hover{
+    background:#fff;
+    color:var(--main);
+}
+.services .boxContainer .box p{
+    line-height: 1.8rem;
+    padding: 1rem 0;
+    color: lightslategrey;
+    font-size: 1.4rem;
+}
+/* Service Section End */
