@@ -176,6 +176,16 @@ header .navbar a:hover{
 }
 /* Login form Container */
 
+/* inscription form Container */
+.inscription{
+    margin-bottom: 200px;
+    min-height: 100vh;
+    border-radius: 1.2rem;
+    border: var(--border);
+    box-shadow:var(--box_shadow);
+    
+}
+
 /* home Section Start */
 .home{
     padding-top: 5rem;

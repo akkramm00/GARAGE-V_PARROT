@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.css" />
 
     <!-- link Bootstrap -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- link CSS -->
     <link rel="stylesheet" href="Templates\style.css">
     <title>Garage parrot</title>
@@ -26,12 +26,13 @@
         <a href="#" class="logo"><span>G</span>.ParroT</a>
 
         <nav class="navbar">
-            <a href="#Home">Home</a>
-            <a href="#Vehicule">Vehicule</a>
-            <a href="#featured">Featured</a>
-            <a href="#Service">Services</a>
-            <a href="#Review">Review</a>
-            <a href="#Contact">Contact</a>
+            <a href="./#Home">Home</a>
+            <a href="./#Vehicule">Vehicule</a>
+            <a href="./#featured">Nos Arrivages</a>
+            <a href="./#Service">Services</a>
+            <a href="./#Review">Review</a>
+            <a href="./#Contact">Contact</a>
+            <a href="./S'inscrire.php">S'inscrire</a>
         </nav>
 
         <div id="LoginBtn">
