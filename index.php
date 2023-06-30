@@ -1,8 +1,8 @@
 <?php
 require_once __DIR__ . "/Templates/header.php";
 require_once __DIR__ . "/Templates/login.php";
-?>
 
+?>
 
 <!--Home Section Start-->
 <section id="Home" class="home">
