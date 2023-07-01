@@ -16,11 +16,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nom = $_POST['inputnom'];
     $prenom = $_POST['inputprenom'];
     $email = $_POST['inputEmail4'];
-    $password = $_POST['inputPassword4'];
+    $password  = $_POST['inputPassword4'];
     $address = $_POST['inputAddress'];
     $address2 = $_POST['inputAddress2'];
     $city = $_POST['inputCity'];
     $commentaire = $_POST['floatingTextarea2'];
+
+    //Conditions de saisi de données
+    if (empty($nom) || empty($prenom)  || empty($email)  || empty($password)  || empty($address)  || empty($city)) {
+        echo "Veillez saisir tous les champs du formulaire";
+    } else {
+        echo "Bienvenue, $prenom !";
+    }
+
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Votre adresse email est valide";
+    } else {
+        echo "Veuillez saisir une adresse email valide";
+    }
+
+    if (strlen($password) <= 7) {
+        echo "Votre mot de passe doit faire minimum 7 caractères";
+    } else {
+        echo "Bienvenue" . $email;
+    }
 
     // Stocker les valeurs dans la session
     $_SESSION['nom'] = $nom;
