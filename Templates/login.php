@@ -1,10 +1,3 @@
-<?php
-
-
-?>
-
-
-
 <!--- Login form Container/Popup -->
 <div class="loginFormContainer">
     <span id="CloseLoginForm" class="fas fa-times"></span>
