@@ -10,14 +10,18 @@
     <span id="CloseLoginForm" class="fas fa-times"></span>
     <form action="" method="post">
         <h3>User Login</h3>
-        <input type="email" name="email" required class="box">
-        <input type="password" name="password" required class="box">
+        <input type="text" name="pseudo" required placeholder="Pseudo" class="box">
+        <input type="email" name="email" required placeholder="E.mail" class="box">
+        <input type="password" name="password" required placeholder="Password" class="box">
         <p>Mot de passe oublier <a href="#">Click Here</a></p>
-        <button class="btn">Submit</button>
+        <button class="btn">Se connecter</button>
         <p>Or Login Width</p>
         <div class="buttons">
             <a href="#" class="btn">Google</a>
             <a href="#" class="btn">Facebook</a>
+        </div>
+        <div class="buttons">
+            <a href="S'inscrire.php" class="btn">Inscription</a>
         </div>
     </form>
 </div>

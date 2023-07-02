@@ -31,38 +31,38 @@
             <h1 class="center text-center">S'INSCRIRE</h1>
         </div>
         <div class="col-9 mx-auto inscription">
-            <form class="row g-3 " name="contact" method="post" data-netfy="true" action="">
+            <form class="row g-3 " name="contact" method="post" data-netfy="true" action="config_inscription">
 
                 <div class="col-md-6">
                     <label for="inputnom" class="form-label">NOM</label>
-                    <input type="text" class="form-control rounded-0" id="inputnom" placeholder="Leclerc">
+                    <input type="text" name="NOM" class="form-control rounded-0" id="inputnom" placeholder="Leclerc">
                 </div>
                 <div class="col-md-6">
                     <label for="inputprenom" class="form-label">PRENOM</label>
-                    <input type="text" class="form-control rounded-0" id="inputrenom" placeholder="Gérard">
+                    <input type="text" name="PRENOM" class="form-control rounded-0" id="inputrenom" placeholder="Gérard">
                 </div>
                 <div class="col-md-6">
                     <label for="inputEmail4" class="form-label">E.mail</label>
-                    <input type="email" class="form-control rounded-0" id="inputEmail4" placeholder="test@example.com">
+                    <input type="email" name="E.mail" class="form-control rounded-0" id="inputEmail4" placeholder="test@example.com">
                 </div>
                 <div class="col-md-6">
                     <label for="inputPassword4" class="form-label">Password</label>
-                    <input type="password" class="form-control rounded-0" id="inputPassword4" placeholder="Password" required>
+                    <input type="password" name="Password" class="form-control rounded-0" id="inputPassword4" placeholder="Password" required>
                 </div>
                 <div class="col-12">
                     <label for="inputAddress" class="form-label">Address</label>
-                    <input type="text" class="form-control rounded-0" id="inputAddress" placeholder="1234 Main St">
+                    <input type="text" name="Address" class="form-control rounded-0" id="inputAddress" placeholder="1234 Main St">
                 </div>
                 <div class="col-12">
                     <label for="inputAddress2" class="form-label">Address 2</label>
-                    <input type="text" class="form-control rounded-0" id="inputAddress2" placeholder="Apartement, studio, or floor">
+                    <input type="text" name="Address 2" class="form-control rounded-0" id="inputAddress2" placeholder="Apartement, studio, or floor">
                 </div>
                 <div class="col-md-6">
                     <label for="inputCity" class="form-label">City</label>
-                    <input type="text" class="form-control rounded-0" id="inputCity" placeholder="Ville">
+                    <input type="text" name="City" class="form-control rounded-0" id="inputCity" placeholder="Ville">
                 </div>
                 <div class="form-floating ">
-                    <textarea class="form-control rounded-0" placeholder="laissez-nous un commentaire" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <textarea name="commentaire" class="form-control rounded-0" placeholder="laissez-nous un commentaire" id="floatingTextarea2" style="height: 100px"></textarea>
                     <label for="floatingTextarea2"></label>
                 </div>
                 <div class="col-12">

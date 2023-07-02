@@ -1,26 +1,19 @@
 <?php
 // Démarrer la session
 session_start();
-
-// Connexion à la base de données 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "users";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
+require_once 'config.php';
 
 // Vérifier si le formulaire a été soumis
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Récupérer les valeurs des champs du formulaire
-    $nom = $_POST['inputnom'];
-    $prenom = $_POST['inputprenom'];
-    $email = $_POST['inputEmail4'];
-    $password  = $_POST['inputPassword4'];
-    $address = $_POST['inputAddress'];
-    $address2 = $_POST['inputAddress2'];
-    $city = $_POST['inputCity'];
-    $commentaire = $_POST['floatingTextarea2'];
+    $nom = $_POST['NOM'];
+    $prenom = $_POST['PRENOM'];
+    $email = $_POST['E.mail'];
+    $password  = $_POST['Password'];
+    $address = $_POST['Address'];
+    $address2 = $_POST['Address 2'];
+    $city = $_POST['City'];
+    $commentaire = $_POST['commentaire'];
 
     //Conditions de saisi de données
     if (empty($nom) || empty($prenom)  || empty($email)  || empty($password)  || empty($address)  || empty($city)) {
