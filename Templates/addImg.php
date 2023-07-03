@@ -38,7 +38,7 @@
                 Formulaire Ajout une Image
             </div>
             <div class="panel-body ">
-                <form method="post" action="">
+                <form method="post" action="" enctype="multipart/form-data">
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label text-white ">Nom</label><br>
                         <div class="col-sm-12">
