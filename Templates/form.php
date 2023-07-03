@@ -50,7 +50,7 @@
                     <input type="text" name="password_retype" class="form-control rounded-0" id="inputAddress" placeholder="Confirmer votre mot de passe" autocomplete="off">
                 </div>
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary Sign rounded-0 p-1 my-5 mb-3">Valider</button>
+                    <button type="submit" class="btn btn-primary Sign rounded-0 p-1 my-5 mb-3">Inscription</button>
                 </div>
         </div>
 
