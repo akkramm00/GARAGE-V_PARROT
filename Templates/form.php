@@ -31,52 +31,30 @@
             <h1 class="center text-center">S'INSCRIRE</h1>
         </div>
         <div class="col-9 mx-auto inscription">
-            <form class="row g-3 " name="contact" method="post" data-netfy="true" action="config_inscription">
+            <form class="row g-3 " name="contact" method="post" data-netfy="true" action="inscription_traitement.php">
 
-                <div class="col-md-6">
-                    <label for="inputnom" class="form-label">NOM</label>
-                    <input type="text" name="NOM" class="form-control rounded-0" id="inputnom" placeholder="Leclerc">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputprenom" class="form-label">PRENOM</label>
-                    <input type="text" name="PRENOM" class="form-control rounded-0" id="inputrenom" placeholder="Gérard">
+                <div class="col-md-12">
+                    <label for="inputnom" class="form-label">Pseudo</label>
+                    <input type="text" name="pseudo" class="form-control rounded-0" id="inputnom" placeholder="Leclerc">
                 </div>
                 <div class="col-md-6">
                     <label for="inputEmail4" class="form-label">E.mail</label>
-                    <input type="email" name="E.mail" class="form-control rounded-0" id="inputEmail4" placeholder="test@example.com">
+                    <input type="email" name="email" class="form-control rounded-0" id="inputEmail4" placeholder="test@example.com" autocomplete="off">
                 </div>
                 <div class="col-md-6">
-                    <label for="inputPassword4" class="form-label">Password</label>
-                    <input type="password" name="Password" class="form-control rounded-0" id="inputPassword4" placeholder="Password" required>
+                    <label for="inputPassword4" class="form-label">Mot de passe</label>
+                    <input type="password" name="password" class="form-control rounded-0" id="inputPassword4" placeholder="Mot de passe" required autocomplete="off">
                 </div>
                 <div class="col-12">
-                    <label for="inputAddress" class="form-label">Address</label>
-                    <input type="text" name="Address" class="form-control rounded-0" id="inputAddress" placeholder="1234 Main St">
+                    <label for="inputAddress" class="form-label">Confirmer Mot de passe</label>
+                    <input type="text" name="password_retype" class="form-control rounded-0" id="inputAddress" placeholder="Confirmer votre mot de passe" autocomplete="off">
                 </div>
                 <div class="col-12">
-                    <label for="inputAddress2" class="form-label">Address 2</label>
-                    <input type="text" name="Address 2" class="form-control rounded-0" id="inputAddress2" placeholder="Apartement, studio, or floor">
+                    <button type="submit" class="btn btn-primary Sign rounded-0 p-1 my-5 mb-3">Valider</button>
                 </div>
-                <div class="col-md-6">
-                    <label for="inputCity" class="form-label">City</label>
-                    <input type="text" name="City" class="form-control rounded-0" id="inputCity" placeholder="Ville">
-                </div>
-                <div class="form-floating ">
-                    <textarea name="commentaire" class="form-control rounded-0" placeholder="laissez-nous un commentaire" id="floatingTextarea2" style="height: 100px"></textarea>
-                    <label for="floatingTextarea2"></label>
-                </div>
-                <div class="col-12">
-                    <div class="form-check">
-                        <input class="form-check-input rounded-0" type="checkbox" id="gridCheck" checked>
-                        <label class="form-check-label" for="gridCheck">
-                            J'accèpte les conditions générales.
-                        </label>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary Sign rounded-0 p-1 mb-3">Valider</button>
-                </div>
-            </form>
         </div>
+
+        </form>
     </div>
+</div>
 </div>

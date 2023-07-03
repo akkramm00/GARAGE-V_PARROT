@@ -8,11 +8,6 @@
         <input type="password" name="password" required placeholder="Password" class="box">
         <p>Mot de passe oublier <a href="#">Click Here</a></p>
         <button class="btn">Se connecter</button>
-        <p>Or Login Width</p>
-        <div class="buttons">
-            <a href="#" class="btn">Google</a>
-            <a href="#" class="btn">Facebook</a>
-        </div>
         <div class="buttons">
             <a href="S'inscrire.php" class="btn">Inscription</a>
         </div>
