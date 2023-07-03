@@ -32,6 +32,7 @@
             <a href="./#Service">Services</a>
             <a href="./#Review">Review</a>
             <a href="./#Contact">Contact</a>
+            <a href="./Pictures.php">Pictures</a>
             <a href="./S'inscrire.php">S'inscrire</a>
         </nav>
 

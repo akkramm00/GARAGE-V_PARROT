@@ -1,4 +1,8 @@
 <style>
+    .container {
+        margin: 11rem 0;
+    }
+
     .inscription {
         padding: 2rem;
         border-radius: 1.2rem;
