@@ -29,9 +29,16 @@
     <div class="row  fs-3 my-5">
         <div class="col-12">
             <h1 class="center text-center">S'INSCRIRE</h1>
+            <h2>
+                <?php
+                if (isset($_GET['reg_err'])) {
+                    echo  $_GET['reg_err'];
+                }
+                ?>
+            </h2>
         </div>
         <div class="col-9 mx-auto inscription">
-            <form class="row g-3 " name="contact" method="post" data-netfy="true" action="inscription_traitement.php">
+            <form class="row g-3 " name="contact" method="post" data-netfy="true" action="config/inscription_traitement.php">
 
                 <div class="col-md-12">
                     <label for="inputnom" class="form-label">Pseudo</label>

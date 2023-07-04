@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once __DIR__ . '/config.php';
+
 
 // On vérifie les informations du formulaire
 if (isset($_POST["email"]) && isset($_POST["password"])) { // On vérifie si l'utilisateur a saisi des informations

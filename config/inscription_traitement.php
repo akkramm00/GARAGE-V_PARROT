@@ -4,12 +4,7 @@ session_start();
 require_once __DIR__ . '/config.php';
 
 // Vérifier si le formulaire a été soumis
-if (
-    isset($_POST['pseudo'])
-    && isset($_POST['email'])
-    && isset($_POST['password'])
-    && isset($_POST['password_retype'])
-) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Récupérer les valeurs des champs du formulaire
     $pseudo = htmlspecialchars($_POST['pseudo']);
     $email = htmlspecialchars($_POST['email']);
@@ -36,26 +31,26 @@ if (
                             'password' => $password,
                             'ip' => $ip
                         ));
-                        header("Location: S'inscrire.php?reg_err=success");
+                        header("Location: ../S'inscrire.php?reg_err=success");
                         exit();
                     } else {
-                        header("Location: S'inscrire.php?reg_err=password");
+                        header("Location: ../S'inscrire.php?reg_err=password");
                         exit();
                     }
                 } else {
-                    header("Location: S'inscrire.php?reg_err=email");
+                    header("Location: ../S'inscrire.php?reg_err=email");
                     exit();
                 }
             } else {
-                header("Location: S'inscrire.php?reg_err=email_length");
+                header("Location: ../S'inscrire.php?reg_err=email_length");
                 exit();
             }
         } else {
-            header("Location: S'inscrire.php?reg_err=pseudo_length");
+            header("Location: ../S'inscrire.php?reg_err=pseudo_length");
             exit();
         }
     } else {
-        header("Location: S'inscrire.php?reg_err=already");
+        header("Location: ../S'inscrire.php?reg_err=already");
         exit();
     }
 }
