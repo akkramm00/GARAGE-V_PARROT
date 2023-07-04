@@ -38,9 +38,6 @@
                 Formulaire Ajout une Image
             </div>
             <div class="panel-body ">
-                <div class="row">
-                    <div class="col-md-12"><?php echo $valid; ?></div>
-                </div>
                 <form method="post" action="" enctype="multipart/form-data">
                     <div class="form-group row">
                         <label class="col-sm-2 col-form-label text-white ">Nom</label><br>
