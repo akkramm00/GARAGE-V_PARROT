@@ -1,7 +1,5 @@
 <?php
 session_start();
-
-
 // On vérifie les informations du formulaire
 if (isset($_POST["email"]) && isset($_POST["password"])) { // On vérifie si l'utilisateur a saisi des informations
     // Créons des variables
