@@ -16,8 +16,10 @@
         padding: 2rem;
         box-shadow: 0 0 15px black;
         border-radius: 1rem;
+    }
 
-
+    .bg:hover {
+        background: #000;
     }
 
     .border {
@@ -32,7 +34,7 @@
             <h1>LES PHOTOS</h1>
         </div>
     </div>
-    <div class="container bg col-md-5 col-md-offset-3 ">
+    <div class="container bg col col-10 col-md-offset-3 ">
         <div class="panel panel-info ">
             <div class="panel-heading text-center  text-white fs-1 py-5">
                 Formulaire Ajout une Image
@@ -40,20 +42,38 @@
             <div class="panel-body ">
                 <form method="post" action="" enctype="multipart/form-data">
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label text-white ">Nom</label><br>
-                        <div class="col-sm-12">
-                            <input type="text" name="textnom" class="form-control p-3">
+                        <div class="col-sm-12 col-md-6 my-1">
+                            <label class="col-sm-2 col-form-label text-white ">Model</label>
+                            <input type="text" name="textmodel" class="form-control p-3">
+                        </div>
+                        <div class="col-sm-12 col-md-6 my-1">
+                            <label class="col-sm-2 col-form-label text-white ">Prix</label>
+                            <input type="text" name="textprix" class="form-control p-3">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label text-white ">Info</label><br>
-                        <div class="col-sm-12">
-                            <input type="text" name="textinfo" class="form-control p-3">
+                        <div class="col-sm-12 col-md-6 my-1">
+                            <label class="col-sm-2 col-form-label text-white ">Année</label>
+                            <input type="number" name="textannee" class="form-control p-3">
+                        </div>
+                        <div class="col-sm-12 col-md-6 my-1">
+                            <label class="col-sm-2 col-form-label text-white ">Boite</label>
+                            <input type="text" name="textboite" class="form-control p-3">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-sm-2 col-form-label text-white ">Photo</label><br>
+                        <div class="col-sm-12 col-md-6 my-1">
+                            <label class="col-sm-2 col-form-label text-white ">Energie</label>
+                            <input type="text" name="textenergie" class="form-control p-3">
+                        </div>
+                        <div class="col-sm-12 col-md-6 my-1">
+                            <label class="col-sm-2 col-form-label text-white ">Puissance</label>
+                            <input type="text" name="textpuissance" class="form-control p-3">
+                        </div>
+                    </div>
+                    <div class="form-group row">
                         <div class="col-sm-12">
+                            <label class="col-sm-2 col-form-label text-white ">Photo</label>
                             <input type="file" name="img" class="form-control-file p-3">
                         </div>
                     </div>

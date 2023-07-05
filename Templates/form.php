@@ -1,5 +1,5 @@
 <style>
-    .container {
+    .container-fluid {
         margin: 11rem 0;
     }
 
@@ -10,6 +10,10 @@
         box-shadow: var(--box_shadow);
         background: var(--main);
         color: white;
+    }
+
+    .inscription:hover {
+        background: #000;
     }
 
     .center {
@@ -29,7 +33,7 @@
 </style>
 
 
-<div class="container" id="S'inscrire">
+<div class="container-fluid" id="S'inscrire">
     <div class="row  fs-3 my-5">
         <div class="col-12">
             <h1 class="center text-center">S'INSCRIRE</h1>
@@ -63,9 +67,9 @@
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary Sign rounded-0 p-1 my-5 mb-3">Inscription</button>
                 </div>
+            </form>
         </div>
 
-        </form>
     </div>
 </div>
 </div>
