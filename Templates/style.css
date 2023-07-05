@@ -478,15 +478,24 @@ font-size:2.2rem;
 /* Section Footer Start */
 footer{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     background: var(--main);
     padding: 2rem;
     text-align: center;
+    
 }
-footer a {
+.footerA{
+    width: 100%;
+    height: 25rem;
+    background: var(--main);
+}
+.footerA a {
     color: #fff;
-    font-size: 2.1rem;
-
+    font-size: 1.5rem;
+    padding: 10px;
+    text-decoration: none;
 }
 footer a i{
     padding: 1rem;
@@ -518,6 +527,10 @@ footer a:hover{
     }
     header .navbar{
         position:absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         top:99%;
         left: 0;
         right: 0;
@@ -529,11 +542,12 @@ footer a:hover{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
     header .navbar a{
-        display: block;
-        margin: 2rem;
         font-size: 2rem;
         background: #ccc;
-        padding: 1.3rem;
+        padding: 1rem;
+        width: 100%;
+        border:var(--border);
+        margin: 3px 20px;
     }
     .contact .row {
         display: flex;
@@ -544,15 +558,22 @@ footer a:hover{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height:12rem;
 
     }
+    .footerA{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
   
 }
 @media (max-width: 450px) {
     html{
         font-size: 50%;
     }
+   
 }
 
 
