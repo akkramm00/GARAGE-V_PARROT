@@ -25,8 +25,11 @@
                     // Vérification s'il y a des données à afficher
                     if ($result->num_rows > 0) {
                         foreach ($result as $row) {
+                            // Encodage de l'image en base64
+                            $imageData = file_get_contents($row['Image']);
+                            $base64Image = base64_encode($imageData);
                     ?>
-                         <img src="<?php echo $row['Image']; ?>." alt="image">
+                         <img src="data:image/jpeg;base64,<?php echo $base64Image; ?>" alt="Image">
                          <div class="content">
                              <h3><?php echo $row['Model']; ?></h3>
                              <div class="price"><span>Prix</span><?php echo $row['Prix']; ?></div>
@@ -47,6 +50,7 @@
                     $conn->close();
                     ?>
              </div>
+
          </div>
          <div class="swiper-pagination"></div>
      </div>
