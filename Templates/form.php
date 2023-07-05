@@ -14,6 +14,7 @@
 
     .inscription:hover {
         background: #000;
+        transition: 0.5s;
     }
 
     .center {

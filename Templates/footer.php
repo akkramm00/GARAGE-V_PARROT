@@ -2,7 +2,7 @@
 <footer class="container-fluid ">
     <div class="row d-flex justify-content-center align-items-center">
         <div class="col-12 py-5">
-            <table class="table table-dark table-striped table-hover box-ch my-3 py-5 text-white fs-4 bg-dark ">
+            <table class="table table-dark table-striped table-hover box-ch my-5 py-5 text-white fs-4 bg-dark">
                 <thead>
                     <tr>
                         <th scope="col">Jours</th>
@@ -48,7 +48,7 @@
                 </tbody>
             </table>
         </div>
-        <div class="col-12 py-3 footerA">
+        <div class="col-12 py-3 footerA d-flex justify-content-between align-items-center">
             <a href="mailto:G.parrot@yahoo.fr"><i class="fas  fa-envelope"></i>G.parrot@yahoo.fr</a>
             <a href="#">&copy; Tous Droits réservés</a>
             <a href="tel:(+33) 123456789"><i class="fas  fa-phone"></i></i>(+33) 123456789</a>
