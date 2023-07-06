@@ -1,5 +1,8 @@
- <!--Vehicules Section Start -->
+ <?php
+    require_once 'config/upload_image.php';
+    ?>
 
+ <!--Vehicules Section Start -->
  <section id="Vehicule" class="vehicule">
      <h1 class="heading">Voitures a Vendre</h1>
      <div class="swiper VehiculesSlider">
@@ -7,17 +10,6 @@
 
              <div class="swiper-slide box">
                  <?php
-                    // Connexion à la base de données
-                    $servername = "localhost";
-                    $username = "root";
-                    $password = "";
-                    $dbname = "php_image";
-
-                    $conn = new mysqli($servername, $username, $password, $dbname);
-                    if ($conn->connect_error) {
-                        die("Erreur de connexion à la base de données : " . $conn->connect_error);
-                    }
-
                     // Récupération des données depuis la base de données
                     $sql = "SELECT * FROM tb_voitures";
                     $result = $conn->query($sql);
@@ -25,12 +17,8 @@
                     // Vérification s'il y a des données à afficher
                     if ($result->num_rows > 0) {
                         foreach ($result as $row) {
-                            //Encodage de l'image en base64
-                            $imageData = file_get_contents($row['Image']);
-                            $base64Image = base64_encode($imageData);
-                            $src = $base64Image;
                     ?>
-                         <img src="<?php echo $row[$imageData]; ?>" alt="">
+                         <img src="<?php echo $row[$imageData]; ?>" alt="image">
                          <div class="content">
                              <h3><?php echo $row['Model']; ?></h3>
                              <div class="price"><span>Prix</span><?php echo $row['Prix']; ?></div>
@@ -51,7 +39,6 @@
                     $conn->close();
                     ?>
              </div>
-
          </div>
          <div class="swiper-pagination"></div>
      </div>

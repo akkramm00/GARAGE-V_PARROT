@@ -15,6 +15,7 @@ if (isset($_POST['btnAjout'])) {
     $boite = $_POST['textboite'];
     $energie = $_POST['textenergie'];
     $puissance = $_POST['textpuissance'];
+    $imageData = $_POPST['img'];
 
     // Vérifier si un fichier a été sélectionné
     if (isset($_FILES['img'])) {
@@ -25,13 +26,12 @@ if (isset($_POST['btnAjout'])) {
             $filename = $file['name'];
             $tempPath = $file['tmp_name'];
 
-            // Déplacer le fichier vers le dossier de destination
-            $destination = "./IMG-FILE/" . $filename;
-            move_uploaded_file($tempPath, $destination);
+            // Obtenir le contenu de l'image encodé en base64
+            $imageData = base64_encode(file_get_contents($tempPath));
 
             // Insérer les données dans la base de données
             $sql = "INSERT INTO tb_voitures (Model, Prix, Année, Boite, Energie, Puissance, Image) 
-                    VALUES ('$model', '$prix', '$annee', '$boite', '$energie', '$puissance', '$filename')";
+                    VALUES ('$model', '$prix', '$annee', '$boite', '$energie', '$puissance', '$imageData')";
 
             if (mysqli_query($conn, $sql)) {
                 $valid = "<div class='alert alert-success'>
