@@ -1,37 +1,23 @@
 <?php
-session_start();
-// On vérifie les informations du formulaire
-if (isset($_POST["email"]) && isset($_POST["password"])) { // On vérifie si l'utilisateur a saisi des informations
-    // Créons des variables
-    $email = htmlspecialchars($_POST["email"]);
-    $password = htmlspecialchars($_POST["password"]);
+// Vérifier si le formulaire a été soumis
+if (isset($_POST['submit'])) {
+    // Récupérer les données du formulaire
+    $pseudo = $_POST['pseudo'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
 
-    // Vérifions si les informations entrées sont correctes
-    $check = $bdd->prepare('SELECT pseudo, email, password FROM utilisateurs WHERE email = ?');
-    $check->execute(array($email));
-    $data = $check->fetch();
-    $row = $check->rowCount();
+    // Vérifier si l'utilisateur existe déjà dans la base de données
+    $checkQuery = $bdd->prepare("SELECT COUNT(*) as count FROM utilisateurs WHERE email = ?");
+    $checkQuery->execute([$email]);
+    $count = $checkQuery->fetchColumn();
 
-    if ($row == 1) {
-        if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $password = hash('sha256', $password);
-            if ($data['password'] === $password) {
-                $_SESSION['user'] = $data['pseudo'];
-                header('Location: landing.php');
-                exit();
-            } else {
-                header('Location: index.php?login_err=password');
-                exit();
-            }
-        } else {
-            header('Location: index.php?login_err=email');
-            exit();
-        }
+    if ($count > 0) {
+        // L'utilisateur existe déjà, rediriger vers la page de connexion
+        header('Location: login.php');
+        exit();
     } else {
-        header('Location: index.php?login_err=already');
+        // L'utilisateur n'existe pas, rediriger vers la page d'inscription
+        header('Location: S\'inscrire.php');
         exit();
     }
-} else {
-    header('Location: index.php');
-    exit();
 }
