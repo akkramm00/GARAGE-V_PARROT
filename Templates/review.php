@@ -4,7 +4,7 @@
     <div class="swiper ReviewSlider">
         <div class="swiper-wrapper">
             <div class="swiper-slide box">
-                <img src="IMG-FILE\Tem2.webp" width="180px" height="180px">
+                <img src="assets\tem2.webp" width="180px" height="180px">
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione assumenda similique ullam, repellendus nulla cum.</p>
                     <h3>Easy Coding</h3>
@@ -19,7 +19,7 @@
             </div>
 
             <div class="swiper-slide box">
-                <img src="IMG-FILE\Tem3.webp" width="180px" height="180px">
+                <img src="assets\Tem3.webp" width="180px" height="180px">
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione assumenda similique ullam, repellendus nulla cum.</p>
                     <h3>Easy Coding</h3>
@@ -34,7 +34,7 @@
             </div>
 
             <div class="swiper-slide box">
-                <img src="IMG-FILE\Tem4.webp" width="180px" height="180px">
+                <img src="assets\Tem4.webp" width="180px" height="180px">
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione assumenda similique ullam, repellendus nulla cum.</p>
                     <h3>Easy Coding</h3>
@@ -49,7 +49,7 @@
             </div>
 
             <div class="swiper-slide box">
-                <img src="IMG-FILE\Tem1.webp" width="180px" height="180px">
+                <img src="assets\Tem1.webp" width="180px" height="180px">
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione assumenda similique ullam, repellendus nulla cum.</p>
                     <h3>Easy Coding</h3>
@@ -64,7 +64,7 @@
             </div>
 
             <div class="swiper-slide box">
-                <img src="IMG-FILE\Tem5.webp" width="180px" height="180px">
+                <img src="assets\Tem5.webp" width="180px" height="180px">
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione assumenda similique ullam, repellendus nulla cum.</p>
                     <h3>Easy Coding</h3>

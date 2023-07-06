@@ -50,14 +50,14 @@
      </div>
  </section>
  <!--Vehicules Section Start -->
- <!--
+
  <section id="Vehicule" class="vehicule">
      <h1 class="heading">Voitures a Vendre</h1>
      <div class="swiper VehiculesSlider">
          <div class="swiper-wrapper">
 
              <div class="swiper-slide box">
-                 <img src="IMG-FILE\MAZDA 1.webp" alt="">
+                 <img src="IMG-FILE\mazda-MX-1.png" alt="">
                  <div class="content">
                      <h3>New Model</h3>
                      <div class="price"><span>Price</span>$102.000</div>
@@ -70,7 +70,7 @@
                  </div>
              </div>
              <div class="swiper-slide box">
-                 <img src="IMG-FILE\MAZDA 2.webp" alt="">
+                 <img src="IMG-FILE\mazda-MX-2.png" alt="">
                  <div class="content">
                      <h3>New Model</h3>
                      <div class="price"><span>Price</span>$102.000</div>
@@ -83,7 +83,7 @@
                  </div>
              </div>
              <div class="swiper-slide box">
-                 <img src="IMG-FILE\MAZDA 3.webp" alt="">
+                 <img src="IMG-FILE\mazda-MX-3.jpg" alt="">
                  <div class="content">
                      <h3>New Model</h3>
                      <div class="price"><span>Price</span>$102.000</div>
@@ -96,7 +96,7 @@
                  </div>
              </div>
              <div class="swiper-slide box">
-                 <img src="IMG-FILE\MAZDA 4.webp" alt="">
+                 <img src="IMG-FILE\mazda-MX-4-.jpg" alt="">
                  <div class="content">
                      <h3>New Model</h3>
                      <div class="price"><span>Price</span>$102.000</div>
@@ -109,7 +109,7 @@
                  </div>
              </div>
              <div class="swiper-slide box">
-                 <img src="IMG-FILE\MAZDA 5.webp" alt="">
+                 <img src="IMG-FILE\mazda-MX-5.jpg" alt="">
                  <div class="content">
                      <h3>New Model</h3>
                      <div class="price"><span>Price</span>$102.000</div>
@@ -122,7 +122,7 @@
                  </div>
              </div>
              <div class="swiper-slide box">
-                 <img src="IMG-FILE\MAZDA 3.webp" alt="">
+                 <img src="IMG-FILE\mazda-MX-6.jpg" alt="">
                  <div class="content">
                      <h3>New Model</h3>
                      <div class="price"><span>Price</span>$102.000</div>
@@ -137,36 +137,5 @@
              <div class="swiper-pagination"></div>
          </div>
  </section>
-                -->
- <!-- Vehicules Section end -->
 
- <script>
-     document.addEventListener("DOMContentLoaded", function() {
-         var swiper = new Swiper(".VehiculesSlider", {
-             grabCursor: true,
-             spaceBetween: 20,
-             centeredSlides: true,
-             loop: true,
-             autoplay: {
-                 delay: 2000,
-                 disableOnInteraction: false,
-             },
-             pagination: {
-                 el: ".swiper-pagination",
-                 clickable: true,
-             },
-             // Responsive breakpoints
-             breakpoints: {
-                 0: {
-                     slidesPerView: 1,
-                 },
-                 768: {
-                     slidesPerView: 2,
-                 },
-                 1024: {
-                     slidesPerView: 3
-                 },
-             },
-         });
-     });
- </script>
+ <!-- Vehicules Section end -->

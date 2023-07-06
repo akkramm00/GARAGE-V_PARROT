@@ -14,5 +14,12 @@
             <button class="btn">Envoyer</button>
         </form>
     </div>
+    <div class="utilities">
+        <div class="col-12 py-3 location d-flex justify-content-around fs-2 my-5 align-items-center">
+            <a href="mailto:G.parrot@yahoo.fr"><i class="fas  fa-envelope m-3"></i>G.parrot@yahoo.fr</a>
+            <a href="https://www.google.fr/maps/place/226+Rte+de+Seysses,+31100+Toulouse/@43.5659236,1.4107372,17z/data=!3m1!4b1!4m6!3m5!1s0x12aebbcf48268f93:0x3a982bed4911e80e!8m2!3d43.5659197!4d1.4133121!16s%2Fg%2F11c1kgb22g?entry=ttu" target="_blank"><i class="fas fa-location-dot m-3"></i>Garage V.Parrot<br>226 route de seyesses<br>31250 Toulouse</a>
+            <a href="tel:(+33) 123456789"><i class="fas  fa-phone m-3"></i></i>(+33) 123456789</a>
+        </div>
+    </div>
 </section>
 <!--Contact form End-->
