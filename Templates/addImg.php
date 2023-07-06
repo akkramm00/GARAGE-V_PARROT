@@ -3,6 +3,11 @@
         font-size: 1.5rem;
     }
 
+    header .logo {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
     .h1 {
         text-shadow: 10px 10px 10px red;
     }
