@@ -1,6 +1,11 @@
  <?php
     require_once 'config/upload_image.php';
     ?>
+ <style>
+     .box {
+         margin: 40px 0;
+     }
+ </style>
 
  <!--Vehicules Section Start -->
  <section id="Vehicule" class="vehicule">
@@ -18,7 +23,7 @@
                     if ($result->num_rows > 0) {
                         foreach ($result as $row) {
                     ?>
-                         <img src="<?php echo $row[$imageData]; ?>" alt="image">
+                         <img src="data:image/jpeg;base64,<?php echo $row['Image']; ?>" alt="">
                          <div class="content">
                              <h3><?php echo $row['Model']; ?></h3>
                              <div class="price"><span>Prix</span><?php echo $row['Prix']; ?></div>
@@ -39,12 +44,13 @@
                     $conn->close();
                     ?>
              </div>
+
          </div>
          <div class="swiper-pagination"></div>
      </div>
  </section>
  <!--Vehicules Section Start -->
-
+ <!--
  <section id="Vehicule" class="vehicule">
      <h1 class="heading">Voitures a Vendre</h1>
      <div class="swiper VehiculesSlider">
@@ -131,5 +137,36 @@
              <div class="swiper-pagination"></div>
          </div>
  </section>
-
+                -->
  <!-- Vehicules Section end -->
+
+ <script>
+     document.addEventListener("DOMContentLoaded", function() {
+         var swiper = new Swiper(".VehiculesSlider", {
+             grabCursor: true,
+             spaceBetween: 20,
+             centeredSlides: true,
+             loop: true,
+             autoplay: {
+                 delay: 2000,
+                 disableOnInteraction: false,
+             },
+             pagination: {
+                 el: ".swiper-pagination",
+                 clickable: true,
+             },
+             // Responsive breakpoints
+             breakpoints: {
+                 0: {
+                     slidesPerView: 1,
+                 },
+                 768: {
+                     slidesPerView: 2,
+                 },
+                 1024: {
+                     slidesPerView: 3
+                 },
+             },
+         });
+     });
+ </script>

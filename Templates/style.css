@@ -15,7 +15,6 @@
     outline: none;
     transition: linear 0.2s;
 }
-
 *::selection {
 background: var(--main);
 color : #000;
@@ -484,7 +483,15 @@ footer{
     background: var(--main);
     padding: 2rem;
     text-align: center;
+    box-shadow: 0 -1rem 1rem rgb(35, 34, 34);
     
+}
+.box-ch{
+    box-shadow: 0 0 1.2rem rgb(26, 24, 24);
+    border-radius: 1rem;
+}
+.rounded{
+    border-radius: 1rem ;
 }
 .footerA{
     width: 100%;

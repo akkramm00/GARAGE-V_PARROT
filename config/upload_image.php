@@ -15,7 +15,7 @@ if (isset($_POST['btnAjout'])) {
     $boite = $_POST['textboite'];
     $energie = $_POST['textenergie'];
     $puissance = $_POST['textpuissance'];
-    $imageData = $_POPST['img'];
+    //$imageData = $_POPST['img'];
 
     // Vérifier si un fichier a été sélectionné
     if (isset($_FILES['img'])) {

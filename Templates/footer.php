@@ -2,8 +2,8 @@
 <footer class="container-fluid ">
     <div class="row d-flex justify-content-center align-items-center">
         <div class="col-12 py-5">
-            <table class="table table-dark table-striped table-hover box-ch my-5 py-5 text-white fs-4 bg-dark">
-                <thead>
+            <table class="table box-ch table-info table-striped table-hover box-ch my-5 py-5 text-danger fs-4 bg-dark rounded-top">
+                <thead class="rounded-top">
                     <tr>
                         <th scope="col">Jours</th>
                         <th scope="col">Matin</th>
