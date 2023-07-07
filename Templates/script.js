@@ -4,6 +4,13 @@ let Navbar = document.querySelector(".navbar");
 MenuBtn.onclick = () => {
     MenuBtn.classList.toggle("fa-times");
     Navbar.classList.toggle("active");
+   
+};
+
+window.onscroll = () => {
+    MenuBtn.classList.remove("fa-times");
+    Navbar.classList.remove("active");
+    ThemeToggle.classList.remove("active");
 };
 
 // LOGIN FORM
@@ -85,6 +92,21 @@ var swiper= new Swiper(".featureslider", {
             slidesPerView: 3
         },
     },
+});
+//Theme Toggle
+let ThemeToggle = document.querySelector(".themeToggle");
+let ToggleBtn = document.querySelector(".ToggleBtn");
+
+ToggleBtn.onclick = () => {
+    ThemeToggle.classList.toggle("active");
+    Menu.classList.remove("fa-times");
+    Navbar.classList.remove("active");
+};
+document.querySelectorAll(".themeToggle .themeBtn").forEach((btn) => {
+    btn.onclick = () => {
+        let color = btn.style.background;
+        document.querySelector(":root").style.setProperty("--main" ,color);
+    };
 });
 
 // Swiper JS FOR featured Slider

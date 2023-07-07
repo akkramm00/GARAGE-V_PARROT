@@ -384,8 +384,11 @@ font-size:2.2rem;
     color:var(--main);
 }
 .services .boxContainer .box a{
-    color: #fff;
+    color: #f8f6f6;
     text-decoration: none;
+}
+.services .boxContainer .box a:hover{
+    color: var(--main);
 }
 .services .boxContainer .box p{
     line-height: 1.8rem;
@@ -554,6 +557,57 @@ footer a:hover{
      transform: translateX(-100px);
   }
 /* Section Footer End */
+
+/* Theme Toggle */
+.themeToggle {
+    position: fixed;
+    top: 10rem;
+    right: -20rem;
+    background: #000;
+    text-align: center;
+    width: 20rem;
+    z-index: 1000;
+}
+.themeToggle.active {
+    right: 0;
+}
+.themeToggle h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.themeToggle .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+.themeToggle .themeBtn {
+    height: 5rem;
+    width: 5rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.themeToggle .ToggleBtn {
+    position: absolute;
+    top: 0.3rem;
+    left: -5.9rem;
+    padding: 1.3rem 1.5rem;
+    background: #000;
+    cursor: pointer;
+}
+.themeToggle .ToggleBtn i {
+    color: #fff;
+    font-size: 3rem;
+    animation: spin 1.5s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(360deg);
+    }
+}
+/* Theme Toggle */
 
 /* Media query */
 @media (max-width: 991px) {

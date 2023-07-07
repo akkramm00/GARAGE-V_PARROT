@@ -65,6 +65,23 @@
 </footer>
 <!-- Section Footer End-->
 
+<!--theme Toggle St-->
+<div class="themeToggle">
+    <div class="ToggleBtn">
+        <i class="fas fa-cog"></i>
+    </div>
+    <h3>Choisir une Couleur</h3>
+    <div class="buttons">
+        <div class="themeBtn" style="background: #0011ff;">1</div>
+        <div class="themeBtn" style="background: #ffb404;">2</div>
+        <div class="themeBtn" style="background: #2bff00;">3</div>
+        <div class="themeBtn" style="background: #fc00dbe6;">4</div>
+        <div class="themeBtn" style="background: #cb5825;">5</div>
+        <div class="themeBtn" style="background: #ff041d;">6</div>
+    </div>
+</div>
+<!--theme Toggle End-->
+
 
 <!-- link JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
