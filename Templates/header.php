@@ -34,6 +34,7 @@
             <a href="./#Contact">Contact</a>
             <a href="./Pictures.php">Pictures</a>
             <a href="./S'inscrire.php">S'inscrire</a>
+            <a href="./dates.php">R.vous</a>
         </nav>
 
         <div id="LoginBtn">

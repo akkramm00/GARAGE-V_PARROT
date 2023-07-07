@@ -1,52 +1,50 @@
 <?php
-// Récupération des données du formulaire
-$nom = $_POST['nom'];
-$prenom = $_POST['prenom'];
-$email = $_POST['email'];
-$services = $_POST['services'];
-$message = $_POST['message'];
+// Vérifier si le formulaire a été soumis
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Récupération des données du formulaire
+    $nom = trim($_POST['nom']);
+    $prenom = trim($_POST['prenom']);
+    $email = trim($_POST['email']);
+    $services = trim($_POST['services']);
+    $message = trim($_POST['message']);
 
-// Vérification de la connexion
-if ($conn->connect_error) {
-    die("La connexion à la base de données a échoué : " . $conn->connect_error);
-}
+    // Vérifier si tous les champs sont remplis
+    if (empty($nom) || empty($prenom) || empty($email) || empty($services) || empty($message)) {
+        echo "Veuillez remplir tous les champs.";
+    } else {
+        // Vérifier la validité de l'adresse email
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            echo "Veuillez saisir une adresse email valide.";
+        } else {
+            // Connexion à la base de données
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "users";
 
-//vérification des champs de saisi
-// Validation des champs (exemple simple)
-if (empty($nom) || empty($prenom) || empty($email) || empty($message) || empty($services)) {
-    echo "Veuillez remplir tous les champs.";
-} else {
-    // Tous les champs sont remplis, vous pouvez effectuer d'autres opérations ici
-    echo "Bienvenue , $nom !";
-}
-// Condition de saisie d'une adresse email valide:
-if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    echo "votre adresse email est valide";
-} else {
-    "Veuillez saisir ene adresse email valide";
-}
+            $conn = new mysqli($servername, $username, $password, $dbname);
 
-//Condition de saisi de message :
-if ($message === 0) {
-    echo "veuillez séléctionner un service ";
-} else {
-    echo "message pris en compte";
-}
-//Condition de selectionner un service:
-if ($services === 0) {
-    echo "veuillez séléctionner un service ";
-} else {
-    echo "message pris en compte";
-}
+            // Vérifier la connexion à la base de données
+            if ($conn->connect_error) {
+                die("La connexion à la base de données a échoué : " . $conn->connect_error);
+            }
 
-// Insertion des données dans la table rendez_vous
-$sql = "INSERT INTO rendez_vous (nom, prenom, email,services, message) VALUES ('$nom', '$prenom', '$email',$services, '$message')";
+            // Préparer la requête d'insertion
+            $stmt = $conn->prepare("INSERT INTO rendez_vous (nom, prenom, email, services, message) VALUES (?, ?, ?, ?, ?)");
+            $stmt->bind_param("sssss", $nom, $prenom, $email, $services, $message);
 
-if ($conn->query($sql) === TRUE) {
-    echo "Les données ont été envoyées avec succès.";
-} else {
-    echo "Une erreur s'est produite lors de l'envoi des données : " . $conn->error;
+            // Exécuter la requête d'insertion
+            if ($stmt->execute()) {
+                // Redirection vers index.php
+                header("Location:../index.php");
+                exit();
+            } else {
+                echo "Une erreur s'est produite lors de l'envoi des données : " . $stmt->error;
+            }
+
+            // Fermeture de la connexion à la base de données
+            $stmt->close();
+            $conn->close();
+        }
+    }
 }
-
-// Fermeture de la connexion à la base de données
-$conn->close();
