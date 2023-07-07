@@ -7,7 +7,7 @@
                 <img src="assets\tem2.webp" width="180px" height="180px">
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione assumenda similique ullam, repellendus nulla cum.</p>
-                    <h3>Easy Coding</h3>
+                    <h3>Satisfait</h3>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -22,7 +22,7 @@
                 <img src="assets\Tem3.webp" width="180px" height="180px">
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione assumenda similique ullam, repellendus nulla cum.</p>
-                    <h3>Easy Coding</h3>
+                    <h3>Satisfait</h3>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -37,7 +37,7 @@
                 <img src="assets\Tem4.webp" width="180px" height="180px">
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione assumenda similique ullam, repellendus nulla cum.</p>
-                    <h3>Easy Coding</h3>
+                    <h3>Satisfait</h3>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -52,7 +52,7 @@
                 <img src="assets\Tem1.webp" width="180px" height="180px">
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione assumenda similique ullam, repellendus nulla cum.</p>
-                    <h3>Easy Coding</h3>
+                    <h3>Satisfait</h3>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -67,7 +67,7 @@
                 <img src="assets\Tem5.webp" width="180px" height="180px">
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione assumenda similique ullam, repellendus nulla cum.</p>
-                    <h3>Easy Coding</h3>
+                    <h3>Satisfait</h3>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
