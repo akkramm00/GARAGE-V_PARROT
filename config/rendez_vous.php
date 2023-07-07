@@ -15,6 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Vérifier la validité de l'adresse email
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             echo "Veuillez saisir une adresse email valide.";
+            header("Location:../#Contact");
         } else {
             // Connexion à la base de données
             $servername = "localhost";

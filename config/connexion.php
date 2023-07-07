@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
         exit();
     } else {
         // L'utilisateur n'existe pas, rediriger vers la page d'inscription
-        header('Location: S\'inscrire.php');
+        header("Location: ../S'inscrire.php");
         exit();
     }
 }

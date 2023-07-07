@@ -31,14 +31,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             'password' => $password,
                             'ip' => $ip
                         ));
-                        header("Location: ../S'inscrire.php?reg_err=success");
+                        header("Location: ../S'inscrire.php?reg_err=Inscription avec succès");
                         exit();
                     } else {
-                        header("Location: ../S'inscrire.php?reg_err=password");
+                        header("Location: ../S'inscrire.php?reg_err=Mot de passe incorrecte");
                         exit();
                     }
                 } else {
-                    header("Location: ../S'inscrire.php?reg_err=email");
+                    header("Location: ../S'inscrire.php?reg_err=Veuillez saisir un Email valide");
                     exit();
                 }
             } else {
