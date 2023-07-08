@@ -562,24 +562,27 @@ footer a:hover{
 .themeToggle {
     position: fixed;
     top: 10rem;
-    right: -20rem;
-    background: #000;
+    right: -10rem;
+    background:transparent;
     text-align: center;
-    width: 20rem;
+    width: 10rem;
     z-index: 1000;
 }
 .themeToggle.active {
     right: 0;
 }
 .themeToggle h3 {
-    color: #fff;
-    font-size: 2rem;
-    padding: 1rem 0;
+    color: #0c0c0c;
+    font-size: 1.5rem;
+    padding: 2rem 1rem;
+    
+
 }
 .themeToggle .buttons {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
     gap: 1rem;
     padding: 1rem;
 }

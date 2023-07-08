@@ -9,7 +9,7 @@
     }
 
     .h1 {
-        text-shadow: 10px 10px 10px red;
+        text-shadow: 10px 10px 10px var(--main);
     }
 
     #Pictures {
@@ -19,7 +19,7 @@
     .bg {
         background: var(--main);
         padding: 2rem;
-        box-shadow: 0 0 15px black;
+        box-shadow: var(--box_shadow);
         border-radius: 1rem;
     }
 
@@ -36,13 +36,13 @@
 <main class="container-fluid" id="Pictures">
     <div class="row h1">
         <div class="col-12 text-center p-5 fw-bold">
-            <h1>LES PHOTOS</h1>
+            <h1>LES ARTICLES</h1>
         </div>
     </div>
     <div class="container bg col col-10 col-md-offset-3 ">
         <div class="panel panel-info ">
             <div class="panel-heading text-center  text-white fs-1 py-5">
-                Formulaire Ajout une Image
+                AJOUT DES ARTICLES
             </div>
             <div class="panel-body ">
                 <form method="post" action="" enctype="multipart/form-data">

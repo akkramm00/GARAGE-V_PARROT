@@ -70,14 +70,14 @@
     <div class="ToggleBtn">
         <i class="fas fa-cog"></i>
     </div>
-    <h3>Choisir une Couleur</h3>
+    <h3>theme Colors </h3>
     <div class="buttons">
-        <div class="themeBtn" style="background: #0011ff;">1</div>
-        <div class="themeBtn" style="background: #ffb404;">2</div>
-        <div class="themeBtn" style="background: #2bff00;">3</div>
-        <div class="themeBtn" style="background: #fc00dbe6;">4</div>
-        <div class="themeBtn" style="background: #cb5825;">5</div>
-        <div class="themeBtn" style="background: #ff041d;">6</div>
+        <div class="themeBtn" style="background: #0011ff;"></div>
+        <div class="themeBtn" style="background: #ffb404;"></div>
+        <div class="themeBtn" style="background: #2bff00;"></div>
+        <div class="themeBtn" style="background: #fc00dbe6;"></div>
+        <div class="themeBtn" style="background: #cb5825;"></div>
+        <div class="themeBtn" style="background: #ff041d;"></div>
     </div>
 </div>
 <!--theme Toggle End-->

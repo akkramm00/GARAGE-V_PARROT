@@ -32,7 +32,7 @@
             <a href="./#Service">Services</a>
             <a href="./#Review">Review</a>
             <a href="./#Contact">Contact</a>
-            <a href="./Pictures.php">Pictures</a>
+            <a href="./Pictures.php">Ad.Articles</a>
             <a href="./S'inscrire.php">S'inscrire</a>
             <a href="./dates.php">R.vous</a>
         </nav>
