@@ -45,9 +45,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 echo "Une erreur s'est produite lors de l'envoi des données : " . $stmt->error;
             }
 
-            // Fermeture de la connexion à la base de données
-            $stmt->close();
-            $conn->close();
+            // Supprimer un rendez-vous
+            if (isset($_GET['id'])) {
+                $id = $_GET['id'];
+
+                // Connexion à la base de données
+                $conn = new mysqli('localhost', 'root', '', 'users');
+
+                // Vérifier la connexion à la base de données
+                if ($conn->connect_error) {
+                    die("La connexion à la base de données a échoué : " . $conn->connect_error);
+                }
+
+                // Préparer la requête de suppression
+                $stmt = $conn->prepare("DELETE FROM rendez_vous WHERE id = ?");
+                $stmt->bind_param("i", $id);
+
+                // Exécuter la requête de suppression
+                if ($stmt->execute()) {
+                    echo "Rendez-vous supprimé avec succès.";
+                } else {
+                    echo "Une erreur s'est produite lors de la suppression du rendez-vous : " . $stmt->error;
+                }
+
+
+                // Fermeture de la connexion à la base de données
+                $stmt->close();
+                $conn->close();
+            }
         }
     }
 }
