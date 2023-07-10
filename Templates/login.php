@@ -6,7 +6,7 @@ require_once "config/connexion.php";
 
 <div class="loginFormContainer">
     <span id="CloseLoginForm" class="fas fa-times"></span>
-    <form action="" method="post">
+    <form action="index.php" method="post">
         <h3>User Login</h3>
         <input type="text" name="pseudo" required placeholder="Pseudo" class="box">
         <input type="email" name="email" required placeholder="E.mail" class="box">

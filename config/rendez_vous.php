@@ -1,12 +1,14 @@
 <?php
+require_once "config/config.php";
+
 // Vérifier si le formulaire a été soumis
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Récupération des données du formulaire
-    $nom = trim($_POST['nom']);
-    $prenom = trim($_POST['prenom']);
-    $email = trim($_POST['email']);
-    $services = trim($_POST['services']);
-    $message = trim($_POST['message']);
+    $nom = htmlspecialchars($_POST['nom']);
+    $prenom = htmlspecialchars($_POST['prenom']);
+    $email = htmlspecialchars($_POST['email']);
+    $services = htmlspecialchars($_POST['services']);
+    $message = htmlspecialchars($_POST['message']);
 
     // Vérifier si tous les champs sont remplis
     if (empty($nom) || empty($prenom) || empty($email) || empty($services) || empty($message)) {

@@ -22,6 +22,7 @@ require_once __DIR__ . "/Templates/header.php";
                         <th>Email</th>
                         <th>Services</th>
                         <th>Message</th>
+                        <th>Actions</th> <!-- Nouvelle colonne pour les boutons -->
                     </tr>
 
                     <?php
@@ -51,10 +52,14 @@ require_once __DIR__ . "/Templates/header.php";
                             echo "<td>" . $row["email"] . "</td>";
                             echo "<td>" . $row["services"] . "</td>";
                             echo "<td>" . $row["message"] . "</td>";
+                            echo "<td>";
+                            echo "<button class='btn btn-primary' name='Ajouter'><a href='../#Contact'>Ajouter</a></button>";
+                            echo "<button class='btn btn-danger' name='Supprimer'>Supprimer</button>";
+                            echo "</td>";
                             echo "</tr>";
                         }
                     } else {
-                        echo "<tr><td colspan='5'>Aucun rendez-vous trouvé.</td></tr>";
+                        echo "<tr><td colspan='6'>Aucun rendez-vous trouvé.</td></tr>";
                     }
 
                     // Fermeture de la connexion à la base de données
