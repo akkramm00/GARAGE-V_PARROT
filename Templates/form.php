@@ -1,4 +1,5 @@
 <style>
+    /* s'inscrire style start*/
     .container-fluid {
         margin: 11rem 0;
     }
@@ -31,6 +32,8 @@
     .inscription .btn {
         border: solid 2px white;
     }
+
+    /* s'inscrire style end*/
 </style>
 
 
