@@ -6,9 +6,9 @@
             <div class="col-12 text-white">
                 <h2>Venez Nous Voir pendant :</h2>
             </div>
-            <?php
-            require_once 'Templates/calender.php';
-            ?>
+
+            <?php require_once 'Templates/calender.php'; ?>
+
             <div class="col-12 footerL">
                 <a href="#" class="logo"><span class="G">G</span>arage <span class="V">V</span>incent <span class="P">P</span>arroT</a>
             </div>

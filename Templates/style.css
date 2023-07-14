@@ -89,6 +89,12 @@ header .navbar a:hover{
     border-bottom: 0.3rem solid var(--main);
     transition: 0.5s;
 }
+ .dropdown .Action{
+    width: 10rem;
+    font-size: 2rem;
+    background: var(--main);
+    color:#fff;
+}
 #LoginBtn .btn{
     margin-top: 0;
 }
@@ -253,14 +259,16 @@ header .navbar a:hover{
 
 /* Vehicules Section Start */
 .vehicule{
-    margin-bottom:250px;
+    margin-bottom:200px;
 }
 .VehiculesSlider{
     padding-bottom: 5rem;
 }
 .VehiculesSlider .box{
     text-align:center;
-    margin-bottom: 6rem;
+    margin: 4rem;
+    padding-top: 5rem;
+    
 }
 .vehicule img{
     width: 70%;

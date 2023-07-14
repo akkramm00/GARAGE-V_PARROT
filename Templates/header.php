@@ -32,10 +32,22 @@
             <a href="./#Service">Services</a>
             <a href="./#Review">Review</a>
             <a href="./#Contact">Contact</a>
-            <a href="./Pictures.php">Ad.Articles</a>
+
+            <!-- <a href="./Pictures.php">Ad.Articles</a>
             <a href="./S'inscrire.php">S'inscrire</a>
-            <a href="./dates.php">R.vous</a>
+            <a href="./dates.php">R.vous</a> -->
         </nav>
+        <div class="dropdown">
+            <button class="btn dropdown-toggle m-0" type="button" data-bs-toggle="dropdown" aria-expanded="true">
+                Action
+            </button>
+            <ul class="dropdown-menu Action">
+                <li><a class="dropdown-item" href="./Pictures.php">Ajouter Articles</a></li>
+                <li><a class="dropdown-item" href="./dates.php">Les Arrivages</a></li>
+                <li><a class="dropdown-item" href="./S'inscrire.php">S'inscrire</a></li>
+                <li><a class="dropdown-item" href="./dates.php">Les Rendez-vous</a></li>
+            </ul>
+        </div>
 
         <div id="LoginBtn">
             <button class="btn">SignUp</button>
