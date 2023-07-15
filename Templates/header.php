@@ -44,6 +44,7 @@
             <ul class="dropdown-menu Action">
                 <li><a class="dropdown-item" href="./Pictures.php">Ajouter Articles</a></li>
                 <li><a class="dropdown-item" href="./Arrivages.php">Les Arrivages</a></li>
+                <li><a class="dropdown-item" href="./reviews.php">Ajouter des avis</a></li>
                 <li><a class="dropdown-item" href="./S'inscrire.php">S'inscrire</a></li>
                 <li><a class="dropdown-item" href="./dates.php">Les Rendez-vous</a></li>
             </ul>

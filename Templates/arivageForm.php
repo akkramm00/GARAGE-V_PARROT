@@ -60,7 +60,7 @@
                     <div class="form-group row">
                         <div class="col-sm-12">
                             <label class="col-sm-2 col-form-label text-white ">Photo</label>
-                            <input type="file" name="img" class="form-control-file p-3">
+                            <input type="file" name="img" class="form-control-file p-3 bg-white">
                         </div>
                     </div>
                     <div class="form-group row">

@@ -6,6 +6,8 @@
             <div class="swiper-slide box">
                 <img src="assets\tem2.webp" width="180px" height="180px">
                 <div class="content">
+                    <span class="fs-3">Nom</span>
+                    <span class="fs-3">Prenom</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione assumenda similique ullam, repellendus nulla cum.</p>
                     <h3>Satisfait</h3>
                     <div class="stars">
