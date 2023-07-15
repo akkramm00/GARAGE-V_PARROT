@@ -1,7 +1,19 @@
 <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "users";
 
 $photo = "";
 $valid = "";
+
+// Créer une connexion à la base de données
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+// Vérifier si la connexion a échoué
+if (!$conn) {
+    die("Erreur de connexion à la base de données : " . mysqli_connect_error());
+}
 
 // Vérifier si le formulaire a été soumis
 if (isset($_POST['btnAjout'])) {
