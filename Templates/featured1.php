@@ -3,89 +3,43 @@
     <h1 class="heading">Arrivages</h1>
     <div class="swiper featureslider">
         <div class="swiper-wrapper">
-            <div class="swiper-slide box">
-                <img src="IMG-FILE\PORCHE 3.webp" alt="">
-                <div class="content">
-                    <h3>PORCHE CARRERA</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+            <?php
+            // Inclusion du fichier de configuration de la base de données
+            require 'config/config.php';
+            require 'config/upload_arrivage.php';
+
+            // Récupération des données depuis la base de données
+            $sql = "SELECT * FROM arrivages";
+            $result = $conn->query($sql);
+
+            // Vérification s'il y a des données à afficher
+            if ($result->num_rows > 0) {
+                foreach ($result as $row) {
+            ?>
+                    <div class="swiper-slide box">
+                        <img src="data:image/jpeg;base64,<?php echo $row['Image']; ?>" alt="">
+                        <div class="content">
+                            <h3><?php echo $row['Model']; ?></h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="price"><?php echo $row['Prix']; ?></div>
+                            <a href="#Contact" class="btn">Commader</a>
+
+                        </div>
                     </div>
-                    <div class="price">210 000 €</div>
-                    <a href="#Contact" class="btn">Commader</a>
+            <?php
+                }
+            } else {
+                echo "Aucune donnée à afficher.";
+            }
 
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="IMG-FILE\PORCHE 2.webp" alt="">
-                <div class="content">
-                    <h3>PORCHE 911</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="price">230 000 €</div>
-                    <a href="#Contact" class="btn">Commader</a>
-
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="IMG-FILE\PORCHE 1.webp" alt="">
-                <div class="content">
-                    <h3>PORCHE 911 </h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="price">190 000 €</div>
-                    <a href="#Contact" class="btn">Commader</a>
-
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="IMG-FILE\ASTON 1.webp" alt="">
-                <div class="content">
-                    <h3>ASTON MARTIN </h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="price">450 000 €</div>
-                    <a href="#Contact" class="btn">Commader</a>
-
-                </div>
-            </div>
-
-            <div class="swiper-slide box">
-                <img src="IMG-FILE\BMW 1.webp" alt="">
-                <div class="content">
-                    <h3>BMW M4</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="price">160 000 €</div>
-                    <a href="#Contact" class="btn">Commader</a>
-
-                </div>
-            </div>
+            // Fermeture de la connexion à la base de données
+            $conn->close();
+            ?>
         </div>
     </div>

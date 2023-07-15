@@ -1,10 +1,15 @@
 <?php
-require_once __DIR__ . "/db.php";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "users";
+
 
 $photo = "";
 $valid = "";
 
-
+// Créer une connexion à la base de données
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 
 // Vérifier si le formulaire a été soumis
 if (isset($_POST['btnAjout'])) {
@@ -30,30 +35,32 @@ if (isset($_POST['btnAjout'])) {
             $imageData = base64_encode(file_get_contents($tempPath));
 
             // Insérer les données dans la base de données
-            $sql = "INSERT INTO tb_voitures (Model, Prix, Année, Boite, Energie, Puissance, Image) 
+            if ($conn) {
+                $sql = "INSERT INTO tb_voitures (Model, Prix, Année, Boite, Energie, Puissance, Image) 
                     VALUES ('$model', '$prix', '$annee', '$boite', '$energie', '$puissance', '$imageData')";
 
-            if (mysqli_query($conn, $sql)) {
-                $valid = "<div class='alert alert-success'>
+                if (mysqli_query($conn, $sql)) {
+                    $valid = "<div class='alert alert-success'>
                             <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
                             <b>Image ajoutée avec succès.</b>
                         </div>";
-            } else {
-                $valid = "<div class='alert alert-danger'>
+                } else {
+                    $valid = "<div class='alert alert-danger'>
                             <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
                             <b>Erreur lors de l'ajout de l'image dans la base de données.</b>
                         </div>";
-            }
-        } else {
-            $valid = "<div class='alert alert-danger'>
+                }
+            } else {
+                $valid = "<div class='alert alert-danger'>
                         <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
                         <b>Erreur lors de l'upload du fichier.</b>
                     </div>";
-        }
-    } else {
-        $valid = "<div class='alert alert-danger'>
+            }
+        } else {
+            $valid = "<div class='alert alert-danger'>
                     <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
                     <b>Aucun fichier sélectionné.</b>
                 </div>";
+        }
     }
 }

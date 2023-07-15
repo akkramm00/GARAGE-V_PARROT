@@ -4,7 +4,7 @@
         <div class="swiper-wrapper">
             <?php
             // Inclusion du fichier de configuration de la base de données
-            require 'config/db.php';
+            require_once 'config/config.php';
             require 'config/upload_image.php';
 
             // Récupération des données depuis la base de données

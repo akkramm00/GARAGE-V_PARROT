@@ -1,91 +1,44 @@
- <!-- For second section -->
- <div class="swiper featureslider">
-     <div class="swiper-wrapper">
-         <div class="swiper-slide box">
-             <img src="IMG-FILE\mercedes 1.webp" alt="">
-             <div class="content">
-                 <h3>MERCEDES MCLAREN</h3>
-                 <div class="stars">
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                 </div>
-                 <div class="price">270 000 €</div>
-                 <a href="#" class="btn">Commader</a>
+<div class="swiper featureslider">
+    <div class="swiper-wrapper">
+        <?php
+        // Inclusion du fichier de configuration de la base de données
+        require 'config/config.php';
+        require 'config/upload_arrivage.php';
 
-             </div>
-         </div>
+        // Récupération des données depuis la base de données
+        $sql = "SELECT * FROM arrivages";
+        $result = $conn->query($sql);
 
-         <div class="swiper-slide box">
-             <img src="IMG-FILE\Bugatti 1.webp" alt="">
-             <div class="content">
-                 <h3>BUGATTI CHIRON</h3>
-                 <div class="stars">
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                 </div>
-                 <div class="price">420 000 €</div>
-                 <a href="#" class="btn">Commader</a>
+        // Vérification s'il y a des données à afficher
+        if ($result->num_rows > 0) {
+            foreach ($result as $row) {
+        ?>
+                <div class="swiper-slide box">
+                    <img src="data:image/jpeg;base64,<?php echo $row['Image']; ?>" alt="">
+                    <div class="content">
+                        <h3><?php echo $row['Model']; ?></h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="price"><?php echo $row['Prix']; ?></div>
+                        <a href="#Contact" class="btn">Commader</a>
 
-             </div>
-         </div>
+                    </div>
+                </div>
+        <?php
+            }
+        } else {
+            echo "Aucune donnée à afficher.";
+        }
 
-         <div class="swiper-slide box">
-             <img src="IMG-FILE\LOMBO 1.webp" alt="">
-             <div class="content">
-                 <h3>LAMBORGINI AVENTADOR</h3>
-                 <div class="stars">
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                 </div>
-                 <div class="price">320 000 €</div>
-                 <a href="#" class="btn">Commader</a>
-
-             </div>
-         </div>
-
-         <div class="swiper-slide box">
-             <img src="IMG-FILE\LOMBO 2.webp" alt="">
-             <div class="content">
-                 <h3>LAMBORGIN AVENTADOR</h3>
-                 <div class="stars">
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                 </div>
-                 <div class="price">400 000 €</div>
-                 <a href="#" class="btn">Commader</a>
-
-             </div>
-         </div>
-
-         <div class="swiper-slide box">
-             <img src="IMG-FILE\BUGATTI_Mansory_Chiron_2019_Centuria_Front_White_561742_1280x720.jpg" alt="">
-             <div class="content">
-                 <h3>GUGATTI VERON</h3>
-                 <div class="stars">
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                 </div>
-                 <div class="price">600 000 €</div>
-                 <a href="#" class="btn">Commader</a>
-
-             </div>
-         </div>
-     </div>
- </div>
- </section>
- <!-- Featured Section End-->
+        // Fermeture de la connexion à la base de données
+        $conn->close();
+        ?>
+    </div>
+</div>
+</section>
+<!--featured Section End
