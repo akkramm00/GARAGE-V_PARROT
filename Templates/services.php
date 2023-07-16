@@ -2,42 +2,37 @@
 <section id="Service" class="services">
     <h1 class="heading">Nos Services</h1>
     <div class="boxContainer">
-        <div class="box">
-            <i class="fas fa-gas-pump"></i>
-            <h3>Produits, oil ... </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptate voluptatibus, quod quisquam quis omnis.</p>
-            <button class="btn"><a href="#Contact">Prendre rendez-vous</a></button>
-        </div>
-        <div class="box">
-            <i class="fas fa-tools"></i>
-            <h3>Réparation Mécanique</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptate voluptatibus, quod quisquam quis omnis.</p>
-            <button class="btn"><a href="#Contact">Prendre rendez-vous</a></button>
-        </div>
-        <div class="box">
-            <i class="fa fa-snowflake"></i>
-            <h3>Climatisation</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptate voluptatibus, quod quisquam quis omnis.</p>
-            <button class="btn"><a href="#Contact">Prendre rendez-vous</a></button>
-        </div>
-        <div class="box">
-            <i class="fas fa-car-battery"></i>
-            <h3>Remplacement des batteries</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptate voluptatibus, quod quisquam quis omnis.</p>
-            <button class="btn"><a href="#Contact">Prendre rendez-vous</a></button>
-        </div>
-        <div class="box">
-            <i class="fas fa-car-crash"></i>
-            <h3>Carosserie Voitures</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptate voluptatibus, quod quisquam quis omnis.</p>
-            <button class="btn"><a href="#Contact">Prendre rendez-vous</a></button>
-        </div>
-        <div class="box">
-            <i class="fas fa-headset"></i>
-            <h3>Système Freinage</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptate voluptatibus, quod quisquam quis omnis.</p>
-            <button class="btn"><a href="#Contact">Prendre rendez-vous</a></button>
-        </div>
+        <?php
+        // Connexion à la base de données
+        require_once  'config/config.php';
+
+        $conn = new mysqli($servername, $username, $password, $dbname);
+
+        // Vérifier la connexion à la base de données
+        if ($conn->connect_error) {
+            die("La connexion à la base de données a échoué : " . $conn->connect_error);
+        }
+
+        // Préparer la requête pour récupérer les données depuis la table 'services'
+        $stmt = $conn->prepare("SELECT Icon, Title, Paragraphe, Bouton FROM services");
+        $stmt->execute();
+        $stmt->bind_result($Icon, $title, $paragraphe, $Bouton);
+
+        // Boucle pour afficher les données
+        while ($stmt->fetch()) {
+            // Afficher les données dans la balise <h3> et <p>
+            echo '<div class="box">';
+            echo '<i class="' . htmlspecialchars($Icon) . '"></i>';
+            echo '<h3 name="Title">' . htmlspecialchars($title) . '</h3>'; // Utilisation de htmlspecialchars pour échapper les caractères spéciaux
+            echo '<p name="Paragraphe">' . htmlspecialchars($paragraphe) . '</p>'; // Utilisation de htmlspecialchars pour échapper les caractères spéciaux
+            echo '<button class="btn"><a href="#Contact">' . htmlspecialchars($Bouton) . '</a></button>';
+            echo '</div>';
+        }
+
+        // Fermeture de la connexion à la base de données
+        $stmt->close();
+        $conn->close();
+        ?>
     </div>
 </section>
 <!-- Service Section End-->

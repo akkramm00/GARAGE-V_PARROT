@@ -19,7 +19,10 @@ require_once "config/rendez_vous.php";
                 <option value="service2">Carosserie</option>
                 <option value="service3">Vidange et filtres</option>
                 <option value="service4">Climatisation</option>
-                <option value="service5">Commande Voiture</option>
+                <option value="service5">Hydraulique et refroidissement</option>
+                <option value="service6">Géométrie et Parallélisme ...</option>
+                <option value="service7">Electronic Cars</option>
+                <option value="service8">Commande Voiture</option>
             </select>
             <textarea class="box" name="message" required placeholder="Votre Message" id="" cols="30" rows="5"></textarea>
             <button class="btn" type="submit">Envoyer</button>
