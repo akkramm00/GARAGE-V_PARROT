@@ -45,10 +45,10 @@ function supprimerRendezVous($id)
 <body>
     <div class="container">
         <div class="row d-flex justify-content-center align-items-center ">
-            <div class="col-12 text-center">
+            <div class="col-12 d-flex justify-content-center align-items-center text-center">
                 <h1>Liste des rendez-vous</h1>
             </div>
-            <div class="col-10 ">
+            <div class="col-10 d-flex justify-content-center align-items-center ">
                 <table class="table table-dark table-striped  fs-5 table-hover my-5">
                     <tr>
                         <th>Nom</th>

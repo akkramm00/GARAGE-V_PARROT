@@ -93,7 +93,7 @@ header .navbar a:hover{
     width: 10rem;
     font-size: 1.5rem;
     border: none;
-    background: transparent;
+    background: rgba(1, 1, 1, 0.9);
 }
 .dropdown .Action li {
     width: 15rem;
