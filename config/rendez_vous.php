@@ -39,8 +39,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Exécuter la requête d'insertion
             if ($stmt->execute()) {
                 // Redirection vers index.php
-                header("Location:../index.php");
-                exit();
+                echo ('
+                <div class="d-flex justify-content-center align-items-center w-100 bg-success text-white fs-3 p-3">
+                Rendez-vous enregisté avec succé !
+                </div>'
+                );
             } else {
                 echo "Une erreur s'est produite lors de l'envoi des données : " . $stmt->error;
             }
