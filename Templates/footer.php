@@ -35,6 +35,8 @@
         <div class="themeBtn" style="background: #fc00dbe6;"></div>
         <div class="themeBtn" style="background: #cb5825;"></div>
         <div class="themeBtn" style="background: #ff041d;"></div>
+        <div class="themeBtn" style="background: #1abc9c;"></div>
+        <div class="themeBtn" style="background: #9b59b6;"></div>
     </div>
 </div>
 <!--theme Toggle End-->
