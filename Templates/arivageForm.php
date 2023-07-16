@@ -58,9 +58,9 @@
                     </div>
 
                     <div class="form-group row">
-                        <div class="col-sm-12">
+                        <div class="col-12 my-1">
                             <label class="col-sm-2 col-form-label text-white ">Photo</label>
-                            <input type="file" name="img" class="form-control-file p-3 bg-white">
+                            <input type="file" name="img" class="form-control-file p-2 bg-white w-100 rounded-2 p-0">
                         </div>
                     </div>
                     <div class="form-group row">
