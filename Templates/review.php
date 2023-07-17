@@ -6,8 +6,8 @@
 
             <?php
             // Inclusion du fichier de configuration de la base de données
-            require 'config/config.php';
-            require 'config/upload_reviews.php';
+            require "config/config.php";
+            require "config/upload_reviews.php";
 
             // Récupération des données depuis la base de données
             $sql = "SELECT * FROM reviews";

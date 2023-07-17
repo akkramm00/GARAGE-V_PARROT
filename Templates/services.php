@@ -4,7 +4,7 @@
     <div class="boxContainer">
         <?php
         // Connexion à la base de données
-        require_once  'config/config.php';
+        require_once "config/config.php";
 
         $conn = new mysqli($servername, $username, $password, $dbname);
 

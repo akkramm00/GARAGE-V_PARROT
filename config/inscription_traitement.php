@@ -1,8 +1,6 @@
 <?php
 // Démarrer la session
 session_start();
-require_once __DIR__ . '/config.php';
-
 // Vérifier si le formulaire a été soumis
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Récupérer les valeurs des champs du formulaire

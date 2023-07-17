@@ -1,14 +1,11 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "users";
+require_once "config/config.php";
 
 $photo = "";
 $valid = "";
 
 // Créer une connexion à la base de données
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$conn = mysqli_connect('localhost', 'root', '', 'users');
 
 // Vérifier si la connexion a échoué
 if (!$conn) {

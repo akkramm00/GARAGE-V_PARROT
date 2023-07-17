@@ -1,5 +1,5 @@
 <?php
-require_once 'config/upload_reviews.php';
+require_once "config/upload_reviews.php";
 ?>
 
 

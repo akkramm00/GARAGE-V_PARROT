@@ -4,8 +4,8 @@
         <div class="swiper-wrapper">
             <?php
             // Inclusion du fichier de configuration de la base de données
-            require_once 'config/config.php';
-            require 'config/upload_image.php';
+            require_once "config/config.php";
+            require "config/upload_image.php";
 
             // Récupération des données depuis la base de données
             $sql = "SELECT * FROM tb_voitures";
@@ -42,94 +42,3 @@
         <div class="swiper-pagination"></div>
     </div>
 </section>
-
-<!--
-<section id="Vehicule" class="vehicule">
-    <h1 class="heading">Voitures a Vendre</h1>
-    <div class="swiper VehiculesSlider">
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide box">
-                <img src="IMG-FILE\mazda-MX-1.png" alt="">
-                <div class="content">
-                    <h3>MAZDA MX</h3>
-                    <div class="price"><span>Prix</span>60 000 €</div>
-                    <p>
-                        <span class="fas fa-circle"></span>2022
-                        <span class="fas fa-circle"></span>Automatic
-                        <span class="fas fa-circle"></span>Essence
-                        <span class="fas fa-circle"></span>180 CV
-                    </p>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <img src="IMG-FILE\mazda-MX-2.png" alt="">
-                <div class="content">
-                    <h3>MAZDA MX</h3>
-                    <div class="price"><span>Prix</span>80 000 €</div>
-                    <p>
-                        <span class="fas fa-circle"></span>2022
-                        <span class="fas fa-circle"></span>Automatic
-                        <span class="fas fa-circle"></span>Essence
-                        <span class="fas fa-circle"></span>190 CV
-                    </p>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <img src="IMG-FILE\mazda-MX-3.jpg" alt="">
-                <div class="content">
-                    <h3>MAZDA MX</h3>
-                    <div class="price"><span>Prix</span>100 000 €</div>
-                    <p>
-                        <span class="fas fa-circle"></span>2022
-                        <span class="fas fa-circle"></span>Automatic
-                        <span class="fas fa-circle"></span>Essence
-                        <span class="fas fa-circle"></span>180 CV
-                    </p>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <img src="IMG-FILE\mazda-MX-4-.jpg" alt="">
-                <div class="content">
-                    <h3>MAZDA MX</h3>
-                    <div class="price"><span>Prix</span>102 000 €</div>
-                    <p>
-                        <span class="fas fa-circle"></span>2022
-                        <span class="fas fa-circle"></span>Automatic
-                        <span class="fas fa-circle"></span>Electric
-                        <span class="fas fa-circle"></span>180 CV
-                    </p>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <img src="IMG-FILE\mazda-MX-5.jpg" alt="">
-                <div class="content">
-                    <h3>MAZDA MX</h3>
-                    <div class="price"><span>Prix</span>102 000 €</div>
-                    <p>
-                        <span class="fas fa-circle"></span>2022
-                        <span class="fas fa-circle"></span>Automatic
-                        <span class="fas fa-circle"></span>Diesel
-                        <span class="fas fa-circle"></span>200 CV
-                    </p>
-                </div>
-            </div>
-            <div class="swiper-slide box">
-                <img src="IMG-FILE\mazda-MX-6.jpg" alt="">
-                <div class="content">
-                    <h3>MAZDA MX</h3>
-                    <div class="price"><span>Prix</span>102 000 €</div>
-                    <p>
-                        <span class="fas fa-circle"></span>2022
-                        <span class="fas fa-circle"></span>Automatic
-                        <span class="fas fa-circle"></span>Electric
-                        <span class="fas fa-circle"></span>190 CV
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
-</section>
-</main>-->
-
-<!-- Vehicules Section end -->
