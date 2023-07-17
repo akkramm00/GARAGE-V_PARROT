@@ -1,0 +1,7 @@
+CREATE TABLE users.arrivages (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    Model VARCHAR(255) NOT NULL,
+    Prix DECIMAL(10, 2) NOT NULL,
+    Image VARCHAR(255) NOT NULL,
+    Date DATE NOT NULL
+);

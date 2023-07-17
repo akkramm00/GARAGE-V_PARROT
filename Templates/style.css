@@ -109,7 +109,7 @@ header .navbar a:hover{
 .dropdown .Action li a:hover{
     background: var(--main);
     color: #fff;
-    border-radius: 0.7rem;
+    border-radius: 1rem;
 }
 
 

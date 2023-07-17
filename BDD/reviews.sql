@@ -1,0 +1,8 @@
+CREATE TABLE users.reviews (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    Nom VARCHAR(50) NOT NULL,
+    Prenom VARCHAR(50) NOT NULL,
+    Message TEXT NOT NULL,
+    Image VARCHAR(255),
+    Date DATE NOT NULL
+);

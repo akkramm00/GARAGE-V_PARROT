@@ -2,7 +2,7 @@
     <div class="swiper-wrapper">
         <?php
         // Inclusion du fichier de configuration de la base de données
-        require 'config/config.php';
+        require_once 'config/config.php';
         require 'config/upload_arrivage.php';
 
         // Récupération des données depuis la base de données
