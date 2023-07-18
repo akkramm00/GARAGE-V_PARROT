@@ -1,7 +1,7 @@
 <?php
 require_once "config/config.php";
 
-// Vérifier si le formulaire a été soumis
+// Vérification si le formulaire a été soumis
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Récupération des données du formulaire
     $nom = htmlspecialchars($_POST['nom']);
@@ -10,11 +10,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $services = htmlspecialchars($_POST['services']);
     $message = htmlspecialchars($_POST['message']);
 
-    // Vérifier si tous les champs sont remplis
+    // Vérification si tous les champs sont remplis
     if (empty($nom) || empty($prenom) || empty($email) || empty($services) || empty($message)) {
         echo "Veuillez remplir tous les champs.";
     } else {
-        // Vérifier la validité de l'adresse email
+        // Vérification la validité de l'adresse email
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             echo "Veuillez saisir une adresse email valide.";
             header("Location:../#Contact");
@@ -27,16 +27,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $conn = new mysqli($servername, $username, $password, $dbname);
 
-            // Vérifier la connexion à la base de données
+            // Vérification de la connexion à la base de données
             if ($conn->connect_error) {
                 die("La connexion à la base de données a échoué : " . $conn->connect_error);
             }
 
-            // Préparer la requête d'insertion
+            // Préparation de la requête d'insertion
             $stmt = $conn->prepare("INSERT INTO rendez_vous (nom, prenom, email, services, message) VALUES (?, ?, ?, ?, ?)");
             $stmt->bind_param("sssss", $nom, $prenom, $email, $services, $message);
 
-            // Exécuter la requête d'insertion
+            // Exécution de la requête d'insertion
             if ($stmt->execute()) {
                 // Redirection vers index.php
                 echo ('
@@ -48,23 +48,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 echo "Une erreur s'est produite lors de l'envoi des données : " . $stmt->error;
             }
 
-            // Supprimer un rendez-vous
+            // Suppression d'un rendez-vous
             if (isset($_GET['id'])) {
                 $id = $_GET['id'];
 
                 // Connexion à la base de données
                 $conn = new mysqli('localhost', 'root', '', 'users');
 
-                // Vérifier la connexion à la base de données
+                // Vérification de la connexion à la base de données
                 if ($conn->connect_error) {
                     die("La connexion à la base de données a échoué : " . $conn->connect_error);
                 }
 
-                // Préparer la requête de suppression
+                // Préparation de la requête de suppression
                 $stmt = $conn->prepare("DELETE FROM rendez_vous WHERE id = ?");
                 $stmt->bind_param("i", $id);
 
-                // Exécuter la requête de suppression
+                // Exécution de la requête de suppression
                 if ($stmt->execute()) {
                     echo "Rendez-vous supprimé avec succès.";
                 } else {

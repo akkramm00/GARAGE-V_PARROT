@@ -8,12 +8,12 @@
 
         $conn = new mysqli($servername, $username, $password, $dbname);
 
-        // Vérifier la connexion à la base de données
+        // Vérification de la connexion à la base de données
         if ($conn->connect_error) {
             die("La connexion à la base de données a échoué : " . $conn->connect_error);
         }
 
-        // Préparer la requête pour récupérer les données depuis la table 'services'
+        // Préparation de la requête pour récupérer les données depuis la table 'services'
         $stmt = $conn->prepare("SELECT Icon, Title, Paragraphe, Bouton FROM services");
         $stmt->execute();
         $stmt->bind_result($Icon, $title, $paragraphe, $Bouton);

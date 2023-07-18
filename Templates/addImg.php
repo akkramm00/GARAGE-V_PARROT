@@ -1,3 +1,4 @@
+<!-- addArticles form style start -->
 <style>
     * {
         font-size: 1.5rem;
@@ -31,8 +32,9 @@
         border: 2px solid #fff;
     }
 </style>
+<!-- addArticles form style end -->
 
-
+<!-- addArticles Form Start -->
 <main class="container-fluid" id="Pictures">
     <div class="row h1">
         <div class="col-12 text-center p-5 fw-bold">
@@ -93,3 +95,4 @@
         </div>
     </div>
 </main>
+<!-- addArticles Form End -->

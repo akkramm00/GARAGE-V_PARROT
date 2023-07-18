@@ -1,7 +1,7 @@
 <?php
 // Démarrer la session
 session_start();
-// Vérifier si le formulaire a été soumis
+// Vérification si le formulaire a été soumis
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Récupérer les valeurs des champs du formulaire
     $pseudo = htmlspecialchars($_POST['pseudo']);

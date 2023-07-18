@@ -27,8 +27,8 @@
     <div class="icons">
         <i class="fas fa-home"></i>
         <div class="content">
-            <h3>1000+</h3>
-            <p>New Launch</p>
+            <h3>100+</h3>
+            <p>Nouveautés</p>
         </div>
     </div>
 </section>

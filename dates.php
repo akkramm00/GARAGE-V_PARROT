@@ -8,16 +8,16 @@ function supprimerRendezVous($id)
     // Connexion à la base de données
     $conn = new mysqli('localhost', 'root', '', 'users');
 
-    // Vérifier la connexion à la base de données
+    // Vérification la connexion à la base de données
     if ($conn->connect_error) {
         die("La connexion à la base de données a échoué : " . $conn->connect_error);
     }
 
-    // Préparer la requête de suppression
+    // Préparation de la requête de suppression
     $stmt = $conn->prepare("DELETE FROM rendez_vous WHERE id = ?");
     $stmt->bind_param("i", $id);
 
-    // Exécuter la requête de suppression
+    // Exécution de la requête de suppression
     if ($stmt->execute()) {
         echo "Rendez-vous supprimé avec succès.";
     } else {

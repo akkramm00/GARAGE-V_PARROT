@@ -1,3 +1,5 @@
+<!-- arrivage form style start-->
+
 <style>
     * {
         font-size: 1.5rem;
@@ -31,8 +33,9 @@
         border: 2px solid #fff;
     }
 </style>
+<!-- arrivage form style end -->
 
-
+<!-- arrivage form start -->
 <main class="container-fluid" id="Pictures">
     <div class="row h1">
         <div class="col-12 text-center p-5 fw-bold">
@@ -74,3 +77,4 @@
         </div>
     </div>
 </main>
+<!-- arrivage form start -->

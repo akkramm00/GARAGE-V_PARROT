@@ -36,6 +36,7 @@
     /* s'inscrire style end*/
 </style>
 
+<!-- Sinscrire Form Start -->
 
 <div class="container-fluid" id="S'inscrire">
     <div class="row  fs-3 my-5">
@@ -77,3 +78,5 @@
     </div>
 </div>
 </div>
+
+<!-- Sinscrire Form end -->

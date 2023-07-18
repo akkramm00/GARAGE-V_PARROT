@@ -4,26 +4,26 @@ require_once "config/config.php";
 $photo = "";
 $valid = "";
 
-// Créer une connexion à la base de données
+//connexion à la base de données
 $conn = mysqli_connect('localhost', 'root', '', 'users');
 
-// Vérifier si la connexion a échoué
+// Vérification si la connexion a échoué
 if (!$conn) {
     die("Erreur de connexion à la base de données : " . mysqli_connect_error());
 }
 
-// Vérifier si le formulaire a été soumis
+// Vérification si le formulaire a été soumis
 if (isset($_POST['btnAjout'])) {
     // Récupérer les données du formulaire
     $nom =  htmlspecialchars($_POST['nom']);
     $prenom =  htmlspecialchars($_POST['prenom']);
     $message =  htmlspecialchars($_POST['message']);
 
-    // Vérifier si un fichier a été sélectionné
+    // Vérification si un fichier a été sélectionné
     if (isset($_FILES['img'])) {
         $file = $_FILES['img'];
 
-        // Vérifier s'il n'y a pas d'erreur lors de l'upload du fichier
+        // Vérification s'il n'y a pas d'erreur lors de l'upload du fichier
         if ($file['error'] === UPLOAD_ERR_OK) {
             $filename = $file['name'];
             $tempPath = $file['tmp_name'];
@@ -31,7 +31,7 @@ if (isset($_POST['btnAjout'])) {
             // Obtenir le contenu de l'image encodé en base64
             $imageData = base64_encode(file_get_contents($tempPath));
 
-            // Insérer les données dans la base de données
+            // Insértion des données dans la base de données
             if ($conn) {
                 $sql = "INSERT INTO reviews (Nom, Prenom , Message, Image) 
                         VALUES ('$nom', '$prenom','$message', '$imageData')";

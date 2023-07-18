@@ -1,5 +1,5 @@
   
-  mysql -u root -p,
+  mysql -u root -p users,
 
   CREATE TABLE utilisateurs ,
     id INT(11) AUTO_INCREMENT PRIMARY KEY,
