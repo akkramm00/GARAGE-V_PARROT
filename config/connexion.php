@@ -13,6 +13,7 @@ if (isset($_POST['pseudo']) && isset($_POST['email']) && isset($_POST['password'
     $count = $checkQuery->fetchColumn();
 
     if ($count > 0) {
+        $_SESSION['password'] = $password;
         // L'utilisateur existe déjà, rediriger vers la page de connexion
         header('Location: ../index.php');
         exit();
